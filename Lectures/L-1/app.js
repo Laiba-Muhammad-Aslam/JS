@@ -21,3 +21,7 @@ var num2 = 20;
 var sum = num1 + num2;
 alert(sum);
 window.alert(book);
+
+var originalNum = 90;
+originalNum = originalNum + 10;
+alert(originalNum);
