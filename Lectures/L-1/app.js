@@ -25,3 +25,7 @@ window.alert(book);
 var originalNum = 90;
 originalNum = originalNum + 10;
 alert(originalNum);
+
+var weight = 50;
+weight+=25;
+alert(weight);
