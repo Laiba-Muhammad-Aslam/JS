@@ -17,3 +17,19 @@ alert(num);
 var n1 = 10;
 alert(++n1);
 alert(n1++);
+
+var num = 2 + 2 * 4 - 5 * 2;
+alert(num);
+
+var num = (2 + 2) * 4 - 5 * 2;
+alert(num);
+
+var a = 2;
+var b = 3;
+
+var eq = (a++ + --b) - b++ - --a * a++;
+    //   (2   +  2)  -  2  -  2  *  2;
+alert(eq);
+// console.log(a++ , --b , b++ ,--a , a++);
+
+console.log(((2+2)*2)-2*2);
