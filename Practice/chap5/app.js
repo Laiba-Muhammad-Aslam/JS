@@ -13,30 +13,30 @@ document.write( `<p> Sum of ${num1} and ${num2} is ${sum} </p>`);
 // Q#2
 
 
-// var num1 = prompt("Enter your first Number: ");
-// var num2 = prompt("Enter your second Number: ");
-// var subtraction = parseInt(num1) - parseInt(num2);
-// alert(subtraction);
-// document.write( `Subtraction of ${num1} and ${num2} is ${subtraction} `);
+var num1 = prompt("Enter your first Number: ");
+var num2 = prompt("Enter your second Number: ");
+var subtraction = parseInt(num1) - parseInt(num2);
+alert(subtraction);
+document.write( `Subtraction of ${num1} and ${num2} is ${subtraction} `);
 
-// var num1 = prompt("Enter your first Number: ");
-// var num2 = prompt("Enter your second Number: ");
-// var multiplication = parseInt(num1) * parseInt(num2);
-// alert(multiplication);
-// document.write( `Multiplication of ${num1} and ${num2} is ${multiplication} `);
+var num1 = prompt("Enter your first Number: ");
+var num2 = prompt("Enter your second Number: ");
+var multiplication = parseInt(num1) * parseInt(num2);
+alert(multiplication);
+document.write( `Multiplication of ${num1} and ${num2} is ${multiplication} `);
 
 
-// var num1 = prompt("Enter your first Number: ");
-// var num2 = prompt("Enter your second Number: ");
-// var division = parseInt(num1) / parseInt(num2);
-// alert(division);
-// document.write( `Division of ${num1} and ${num2} is ${division} `);
+var num1 = prompt("Enter your first Number: ");
+var num2 = prompt("Enter your second Number: ");
+var division = parseInt(num1) / parseInt(num2);
+alert(division);
+document.write( `Division of ${num1} and ${num2} is ${division} `);
 
-// var num1 = prompt("Enter your first Number: ");
-// var num2 = prompt("Enter your second Number: ");
-// var remainder = parseInt(num1) % parseInt(num2);
-// alert(remainder);
-// document.write( `Remainder of ${num1} and ${num2} is ${remainder} `);
+var num1 = prompt("Enter your first Number: ");
+var num2 = prompt("Enter your second Number: ");
+var remainder = parseInt(num1) % parseInt(num2);
+alert(remainder);
+document.write( `Remainder of ${num1} and ${num2} is ${remainder} `);
 
 // Q#3
 
@@ -77,13 +77,13 @@ document.write(`<p> ${tableNumber} x 10 =  ${tableNumber * 10} </p>`);
 
 // Q#6 
 
-var farenheit = parseInt(prompt("Please Enter a Farenheit temperature: "));
-var farenheitToCelsius = (farenheit - 32) * 5/9;
-document.write(`<p> ${farenheit} oC is ${farenheitToCelsius} oF  </p>`);
-
 var celcius = parseInt(prompt("Please Enter a Celcius temperature: "));
 var celsiusToFarenheit = (celcius * 9/5) + 32;
-document.write(`<p> ${celcius} oF is ${celsiusToFarenheit} oC  </p>`);
+document.write(`<p> ${celcius}°C is ${celsiusToFarenheit}°F</p>`);
+
+var farenheit = parseInt(prompt("Please Enter a Farenheit temperature: "));
+var farenheitToCelsius = (farenheit - 32) * 5/9;
+document.write(`<p> ${farenheit}°F is ${farenheitToCelsius}°C </p>`);
 
 // Q#7 
 
@@ -133,3 +133,26 @@ var yourAge =  currentYear - birthYear;
 document.writeln(`<p>Current Year: ${currentYear}</p>`);
 document.writeln(`<p>Birth Year: ${birthYear}</p>`);
 document.writeln(`<p>Your Age is: ${yourAge}</p>`);
+
+// Q#12 
+
+var radius = 20;
+var circumference = 2 * (3.142) * radius;
+var area = (3.142) * radius * radius;
+document.writeln(`<p>Radius of a circle : ${radius}</p>`);
+document.writeln(`<p>The circumference is : ${circumference}</p>`);
+document.writeln(`<p>The area is : ${area}</p>`);
+
+// Q#13
+
+document.writeln(`<h1>The Lifetime Supply Calculator</h1>`);
+var favSnack = "chocolate ship";
+var currentAge = 15;
+var estimatedMaxAge = 65;
+var snackPerDay = 3;
+var totalSnacks = (estimatedMaxAge - currentAge) * snackPerDay;
+document.writeln(`<p>Favorite Snack : ${favSnack}</p>`);
+document.writeln(`<p>Current age : ${currentAge}</p>`);
+document.writeln(`<p>Estimated Maximum Age : ${estimatedMaxAge}</p>`);
+document.writeln(`<p>Amount of snacks per day : ${snackPerDay}</p>`);
+document.writeln(`<p>You will need ${totalSnacks} ${favSnack} to last you until the ripe old age of ${estimatedMaxAge}</p>`);
