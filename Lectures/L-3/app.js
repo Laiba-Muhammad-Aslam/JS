@@ -48,8 +48,28 @@ if(age >= 18){
 
 // CALCULATOR 
 
-// var val1 = +prompt("Enter first number: ");
-// var val2 = +prompt("Enter second number: ");
-// var ope = prompt("Enter operator ");
-// var result = (val1) + ope + (val2);
-// console.log("Result: ", result);
+var val1 = +prompt("Enter first number: ");
+var val2 = +prompt("Enter second number: ");
+var ope = prompt("Enter operator ");
+var result;
+
+if(ope === "+"){
+    result = val1 + val2;
+}
+else if(ope === "-"){
+    result = val1 - val2;
+}
+else if(ope === "*"){
+    result = val1 * val2;
+}
+else if(ope === "/"){
+    if(val2 === 0){
+        result = "Cannot divide by zero";
+    }
+    else{
+        result = val1 / val2;
+    }
+}else{
+    result = "Invalid operator";
+}
+console.log("Result: ", result);
