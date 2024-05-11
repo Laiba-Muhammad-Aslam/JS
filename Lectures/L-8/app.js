@@ -43,3 +43,19 @@ console.log(school.slice(1,1));
 
 var school = "UBIT";
 console.log(school.slice(1,2));
+
+var school = "UBIT Karachi";
+console.log(school.slice(1));
+
+// FOR LOOPS 
+
+for(var i =0; i<5; i++){
+    console.log(i);
+}
+console.log(i);
+
+for(var i =0; i<2; i++){
+    console.log(i);
+    break
+}
+console.log(i);
