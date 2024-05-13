@@ -18,12 +18,29 @@
 
 // QUESTION # 3
 
-var num = +prompt("Enter your number: ");
+// var num = +prompt("Enter your number: ");
 
-if (num > 0){
-    console.log("Number is positive");
-}else if (num == 0){
-    console.log("Number is equal to Zero");
-}else{
-    console.log("Number is negative");
+// if (num > 0){
+//     console.log("Number is positive");
+// }else if (num == 0){
+//     console.log("Number is equal to Zero");
+// }else{
+//     console.log("Number is negative");
+// }
+
+
+// QUESTION # 5
+
+var correctPassword = "ravi476";
+var password = prompt("Enter your password: ");
+
+if (password == ""){
+    // console.log("Please enter your password");
+    alert("Please enter your password");
+}else if (password == correctPassword){
+    // console.log("“Correct! The password you entered matches the original password");
+    alert("“Correct! The password you entered matches the original password");
+}else {
+    // console.log("Incorrect password");
+    alert("Incorrect password");
 }
