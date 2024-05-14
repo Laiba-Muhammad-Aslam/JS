@@ -59,3 +59,58 @@ for(var i =0; i<2; i++){
     break
 }
 console.log(i);
+
+
+// Palindrome 
+
+// MY SOLUTION 
+
+// var word = prompt("Enter your word: ").toLowerCase();
+
+// var palindrome = word.split("").reverse().join("");
+
+// if(word == palindrome){
+//     alert("Yes it is a Palindrome");
+// }else{
+//     alert("No it is not a Palindrome");
+// }
+
+// SOLUTION 
+
+// var word = prompt("Enter your word: ").toLowerCase();
+// var reverse = "";
+
+// for (var i = word.length -1; i>=0; i--){
+//     // console.log(word[i]);
+//     reverse+= word[i];
+//     // console.log(reverse);
+// }
+// if (reverse === word){
+//     alert("Yes it is a Palindrome");
+// }else{
+//     alert("No it is not a Palindrome");
+// }
+
+// MIN MAX IN ARRAY 
+
+// var arr = [11, 23, 34, 35, 12, 77, 10];
+// var min = arr[0];
+
+// for (var i = 0; i < arr.length; i++){
+//     if (min > arr[i]){
+//         min = arr[i]
+//     }
+// }
+
+// console.log(`min ${min}`);
+
+var arr = [11, 23, 34, 35, 12, 77, 10];
+var max = arr[0];
+
+for (var i = 0; i < arr.length; i++){
+    if (max < arr[i]){
+        max = arr[i]
+    }
+}
+
+console.log(`max ${max}`);
