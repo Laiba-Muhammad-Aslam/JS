@@ -104,13 +104,48 @@ console.log(i);
 
 // console.log(`min ${min}`);
 
-var arr = [11, 23, 34, 35, 12, 77, 10];
-var max = arr[0];
+
+// var arr = [11, 23, 34, 35, 12, 77, 10];
+// var max = arr[0];
+
+// for (var i = 0; i < arr.length; i++){
+//     if (max < arr[i]){
+//         max = arr[i]
+//     }
+// }
+
+// console.log(`max ${max}`);
+
+// FINDING THE MISSING VALUE 
+
+// MY SOLUTION 
+
+// var arr = [11, 12, 14, 15, 16, 17, 18, 19, 20];
+
+// for (var i = 0; i < arr.length; i++){
+//     if (arr[i+1] - arr[i] != 1){
+//         console.log(`Number is missing after ${arr[i]}`)
+//     }
+// }
+
+// SOLUTION 
+
+// var arr = [11, 12, 14, 15, 16, 17, 18, 19, 20];
+
+// for (var i = 0; i < arr.length; i++){
+//     if (arr[i+1] - arr[i] == 2){
+//         console.log(arr[i] +1);
+//     }
+// }
+
+
+var arr = [50, 51, 52, 55, 56, 57, 58];
 
 for (var i = 0; i < arr.length; i++){
-    if (max < arr[i]){
-        max = arr[i]
+    var diff = arr[i+1] - arr[i];
+    if ( diff > 1){
+        for (var j = 1; j < diff; j++){
+            console.log(arr[i] + j);
+        }
     }
 }
-
-console.log(`max ${max}`);
