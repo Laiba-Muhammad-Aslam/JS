@@ -27,9 +27,15 @@ var fullName = "laiba aslam";
 var result = "";
 
 for (var i = 0; i < fullName.length; i++){
-    console.log(fullName[i]);
+    // console.log(fullName[i]);
     if (i === 0){
-        result += fullName[i].toUpperCase;
+        result += fullName[i].toUpperCase();
+    }else if (fullName[i] === " "){
+        result += fullName[i + 1].toUpperCase();
+        // console.log(result)
     }
-    console.log(result)
+    else{
+        result += fullName[i];
+    }
 }
+console.log(result);
