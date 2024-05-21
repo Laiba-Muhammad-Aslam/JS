@@ -44,3 +44,12 @@ for(var i= 0; i<arr.length; i++){
 }
 console.log(arr);
 
+// SPLICE METHOD 
+
+var pets = ["dog","cat", "fly", "bug", "ox"];
+console.log(pets)
+// pets.splice(2, 2);
+// console.log(pets)
+
+var noPets = pets.slice(2, 4);
+console.log(noPets)
