@@ -53,3 +53,46 @@ qualifications[7] = "PhD";
 for (qualification in qualifications){
     console.log(qualifications[qualification]);
 }
+
+// QUESTION # 8 
+
+var students = ["Laiba", "Yumna", "Maaz", "Huzaifa"];
+var studentMarks = [490, 400, 350, 370];
+var totalMarks = 500;
+
+for (i=0; i < studentMarks.length; i++){
+    var percenteage = (studentMarks[i] * 100) / 500;
+    console.log(`Score of ${students[i]} is ${studentMarks[i]}. Percentage: ${percenteage}`);
+}
+
+
+// QUESTION # 11
+
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+var selectedCities = cities.splice(2,2);
+console.log(selectedCities);
+
+// QUESTION # 12
+
+var arr = ["This", "is", "my", "cat"];
+console.log(arr.join(" "));
+
+// QUESTION # 13 
+
+console.log("Access the values in the order in which they were stored. (FIFO-First In First Out) ");
+
+var obj = ["keyboard", "mouse", "printer", "monitor"];
+
+for (var i = 0; i < obj.length; i++){
+    console.log("Out: " + obj[i]);
+}
+
+// QUESTION # 14 
+
+console.log("Access the values in reverse order. Last In First Out");
+
+var obj = ["keyboard", "mouse", "printer", "monitor"];
+
+for (var i = obj.length - 1; i >= 0 ; i--){
+    console.log("Out: " + obj[i]);
+}
