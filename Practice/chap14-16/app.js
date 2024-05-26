@@ -65,6 +65,11 @@ for (i=0; i < studentMarks.length; i++){
     console.log(`Score of ${students[i]} is ${studentMarks[i]}. Percentage: ${percenteage}`);
 }
 
+// QUESTION # 10 
+
+var scores = [320, 230, 480, 120];
+console.log(scores.sort());
+
 
 // QUESTION # 11
 
@@ -96,3 +101,7 @@ var obj = ["keyboard", "mouse", "printer", "monitor"];
 for (var i = obj.length - 1; i >= 0 ; i--){
     console.log("Out: " + obj[i]);
 }
+
+// QUESTION # 15 
+
+// var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
