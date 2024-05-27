@@ -65,6 +65,17 @@ for (i=0; i < studentMarks.length; i++){
     console.log(`Score of ${students[i]} is ${studentMarks[i]}. Percentage: ${percenteage}`);
 }
 
+// QUESTION # 9
+
+var colors = ["Black", "Orange", "Yellow"];
+console.log(colors);
+
+// PART A 
+
+var askUser = prompt("Enter a color you want to add at the beginning: ");
+colors.unshift(askUser);
+console.log(colors);
+
 // QUESTION # 10 
 
 var scores = [320, 230, 480, 120];
@@ -104,4 +115,7 @@ for (var i = obj.length - 1; i >= 0 ; i--){
 
 // QUESTION # 15 
 
-// var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+for(var i =0; i < phoneManufacturers.length; i++){
+    document.write(`${phoneManufacturers[i]} </br>`);
+}
