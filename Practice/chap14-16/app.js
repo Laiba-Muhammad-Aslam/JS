@@ -76,6 +76,42 @@ var askUser = prompt("Enter a color you want to add at the beginning: ");
 colors.unshift(askUser);
 console.log(colors);
 
+// PART B 
+
+var askUser = prompt("Enter a color you want to add at the end: ");
+colors.push(askUser);
+console.log(colors);
+
+// PART C 
+
+colors.splice(0, 0 , "Teal", "Purple", "Pink");
+console.log(colors);
+
+// PART D 
+
+colors.splice(0, 1);
+console.log(colors);
+
+// PART E 
+
+colors.pop();
+console.log(colors);
+
+// PART F 
+
+var index = +prompt("Enter a position you want to add a color (starting from 0):  ");
+var askUser = prompt("Enter a color you want to add: ");
+colors.splice(index, 0 , askUser);
+console.log(colors);
+
+// PART G 
+
+var index = +prompt("Enter a position you want to remove a color (starting from 0):  ");
+var askUser = +prompt("How many colors you want to remove: ");
+colors.splice(index, askUser);
+console.log(colors);
+
+
 // QUESTION # 10 
 
 var scores = [320, 230, 480, 120];
