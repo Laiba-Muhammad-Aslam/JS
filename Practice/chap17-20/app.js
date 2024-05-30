@@ -38,3 +38,30 @@ console.log(`Multiplication table of ${table} Length ${tableLength}`);
 for(var i=1; i<=tableLength; i++){
     console.log(`${table} x ${i} = ` + table * i);
 }
+
+// QUESTION # 5 
+
+fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for(var i = 0; i<fruits.length; i++){
+    // console.log(fruits[i]);
+    console.log(`Element at index ${i} is ${fruits[i]}`);
+}
+
+// QUESTION # 6 
+
+// PART A 
+
+// COUNTING 
+
+for(var i =1; i<=15; i++){
+    console.log(i);
+}
+
+// PART B 
+
+// REVERSE COUNTING 
+
+for(var i =10; i>=1; i--){
+    console.log(i);
+}
