@@ -56,6 +56,7 @@ for(var i = 0; i<fruits.length; i++){
 
 for(var i =1; i<=15; i++){
     console.log(i);
+    document.write(i + " ");
 }
 
 // PART B 
@@ -64,4 +65,25 @@ for(var i =1; i<=15; i++){
 
 for(var i =10; i>=1; i--){
     console.log(i);
+    document.write(i + " ");
 }
+
+// QUESTION # 7 
+
+// var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var order = prompt("Welcome to ABC Bakery. What do you want to order sir/maam?")
+// // // var i = 0;
+
+// // if(order == items[i]){
+// //     console.log(`$items`)
+// // }
+
+// for(var i = 0; i<items.length; i++){
+//     if(order == items[i]){
+//     console.log(`${items[i]} is availaible at ${i} in our bakery`);
+//     break;
+//     }
+//     else{
+//     console.log(`We are sorry. ${order} is not availaible in our bakery`);
+//     }
+// }
