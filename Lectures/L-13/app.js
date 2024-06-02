@@ -78,3 +78,76 @@ var number = Math.round(221.2);
 console.log(number);
 var number = Math.round(221.7);
 console.log(number);
+
+var number = Math.ceil(221.7);
+console.log(number);
+
+var number = Math.ceil(221.0);
+console.log(number);
+
+var number = Math.ceil(221.01);
+console.log(number);
+
+var number = Math.floor(27.1);
+console.log(number);
+
+var number = Math.floor(27.9);
+console.log(number);
+
+var ranNumber = Math.random();
+console.log(ranNumber);
+
+var ranNumber = Math.random() * 100;
+console.log(ranNumber);
+
+// Generate Numbers between 1 till 6 
+
+// DIICE 
+
+var ranNumber = Math.ceil(Math.random() * 6);
+console.log(ranNumber);
+
+// Generate Numbers 1 & 2 
+
+var ranNumber = Math.ceil(Math.random() * 2);
+console.log(ranNumber);
+
+
+var number = parseInt("23");
+console.log(number);
+
+var number = parseInt("23.4");
+console.log(number);
+
+var number = +"30.4";
+console.log(number);
+
+var number = parseFloat ("23.4");
+console.log(number);
+
+var number = Number("87.4");
+console.log(number);
+
+// Number to String 
+
+var num = 2345;
+var numToString = num.toString();
+console.log(numToString);
+
+var numToString = (323).toString()
+console.log(numToString);
+
+
+// CONTROLLING THE LENGTH OF STRING 
+
+var num = 10.63773688373;
+var newNum = num.toFixed();
+console.log(newNum);
+
+var num = 10.63773688373;
+var newNum = num.toFixed(3);
+console.log(newNum);
+
+var num = 10.732323;
+var newNum = num.toFixed(10);
+console.log(newNum);
