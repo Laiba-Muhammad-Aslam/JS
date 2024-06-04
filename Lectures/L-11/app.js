@@ -99,3 +99,27 @@ for (var i = 0; i < fullName.length; i++){
     }
 }
 console.log(result);
+
+// NESTED FOR LOOP PRACTICE QUESTION 
+
+var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+var fullName = [];
+
+for(var i = 0; i < firstNames.length; i++){
+    for(var j = 0; j < lastNames.length; j++){
+        fullName.push(firstNames[i] + " " + lastNames[j])
+    }
+}
+console.log(fullName);
+
+// CHECK FOR DOUBLE SPACES 
+
+var str = prompt("Enter some text");
+var numChars = str.length;
+for (var i = 0; i < numChars; i++) {
+   if (str.slice(i, i + 2) === " "){    
+   alert("No double spaces!");   
+   break;
+   }
+}
