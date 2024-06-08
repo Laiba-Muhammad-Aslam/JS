@@ -72,3 +72,21 @@ function checkAttendance(student){
 console.log(checkAttendance(101));
 console.log(checkAttendance(181));
 console.log(checkAttendance(1122));
+
+
+var count = 1;
+function foo(){
+    for(var i = 0; i < 3; i++){
+        count++;
+        console.log(count);
+        return count;
+    }
+}
+console.log(foo());
+
+function abc(){
+    console.log("test");
+    return "test 2";
+    console.log("test1");
+}
+console.log(abc());
