@@ -97,3 +97,28 @@ function getValue() {
 
   console.log(input);
 }
+
+// PARCTICE QUESTIONS 
+
+// HEAD AND TAIL GAME 
+
+var choices = ["head", "tail"];
+var coin = Math.round(Math.random());
+// alert(choices[coin])
+var palyer1 = prompt("Player 1: Enter your choice Head | Tail ");
+var palyer2 = prompt("Player 2: Enter your choice Head | Tail ");
+palyer1 = palyer1.toLocaleLowerCase();
+palyer2 = palyer2.toLocaleLowerCase();
+
+if(palyer1 === choices[coin]){
+    alert("Player 1 wins!!");
+}
+else if(palyer2 === choices[coin]){
+    alert("Player 2 wins");
+}
+else if (palyer1 === choices[coin]  && palyer2 === choices[coin]){
+    alert("Draw");
+}
+else{
+    alert(`Invalid Input, You Loss the Game computer chosed ${choices[coin]}`);
+}
