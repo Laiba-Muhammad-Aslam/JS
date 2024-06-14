@@ -12,7 +12,11 @@
         <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="src='https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863'" onmouseleave="src='https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg'">
     </div>
 
-    <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500">
+    <!-- <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover=swapImage()>
+
+    <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="swapImage(event)"> -->
+
+    <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="swapImage(event, 'over')" onmouseleave="swapImage(event, 'out')">
 
     <script src="app.js"></script>
 </body>
