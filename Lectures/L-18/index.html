@@ -6,18 +6,39 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="src='https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863'" onmouseout="src='https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg'">
 
         <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="src='https://www.befunky.com/images/prismic/1f427434-7ca0-46b2-b5d1-7d31843859b6_funky-focus-red-flower-field-after.jpeg?auto=avif,webp&format=jpg&width=863'" onmouseleave="src='https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg'">
-    </div>
+    </div> -->
 
     <!-- <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover=swapImage()>
 
     <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="swapImage(event)"> -->
 
-    <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="swapImage(event, 'over')" onmouseleave="swapImage(event, 'out')">
+    <!-- <img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" alt="" width="500" onmouseover="swapImage(event, 'over')" onmouseleave="swapImage(event, 'out')"> -->
 
+    <!-- <p id="text" onmouseover="expand()"></p> -->
+
+    <input type="number" id="zip" placeholder="Zipcode" onblur="fillCity()">
+    <br>
+    <br>
+    <input type="text" id="city" placeholder="City">
+
+    <!-- ON FOCUS  -->
+    <input type="text" name="" id="alert" onfocus="alert('Hi')">
+    <br>
+    <br>
+
+    <!-- ON ENTER  -->
+     <input type="text" placeholder="message" id="message" onkeydown="sendMessage()">
+
+     <!-- CHAT BOT  -->
+
+     <div style="display: none;" id="typing">
+        typing...
+     </div>
+     <ul id="list"></ul>
     <script src="app.js"></script>
 </body>
 </html>
