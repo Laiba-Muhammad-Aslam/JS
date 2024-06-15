@@ -54,6 +54,7 @@ for(var i = 0; i<fruits.length; i++){
 
 // COUNTING 
 
+document.write("COUNTING <br>")
 for(var i =1; i<=15; i++){
     console.log(i);
     document.write(i + " ");
@@ -63,27 +64,62 @@ for(var i =1; i<=15; i++){
 
 // REVERSE COUNTING 
 
+document.write("<br><br> REVERSE COUNTING <br>")
 for(var i =10; i>=1; i--){
     console.log(i);
     document.write(i + " ");
 }
 
+// PART C 
+
+// EVEN NUMBER 
+
+console.log("Even Number");
+document.write("<br><br> Even Number <br>");
+for(var i = 0; i<=20; i++){
+    if(i % 2 === 0){
+        console.log(i);
+        document.write(i + " ");
+    }
+}
+
+// PART D 
+
+// ODD NUMBER 
+
+document.write("<br><br> Odd Number <br>");
+for(var i = 0; i<=20; i++){
+    if(i % 2 != 0){
+        console.log(i);
+        document.write(i + " ");
+    }
+}
+
+// PART E 
+
+// Series
+
+document.write("<br><br> SERIES <br>");
+for(var i = 2; i<=20; i++){
+    if(i % 2 === 0){
+        document.write(i +"K" + " ");
+    }
+}
+
 // QUESTION # 7 
 
-// var items = ["cake", "apple pie", "cookie", "chips", "patties"];
-// var order = prompt("Welcome to ABC Bakery. What do you want to order sir/maam?")
-// // // var i = 0;
+var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+var order = prompt("Welcome to ABC Bakery. What do you want to order sir/maam?");
+order = order.toLocaleLowerCase();
 
-// // if(order == items[i]){
-// //     console.log(`$items`)
-// // }
+if(items.indexOf(order) === -1){
+    alert(`We are sorry. ${order} is not availaible in our bakery`)
+}else{
+    alert(`${order} is availaible at index ${items.indexOf(order)} in our bakery`);
+}
 
-// for(var i = 0; i<items.length; i++){
-//     if(order == items[i]){
-//     console.log(`${items[i]} is availaible at ${i} in our bakery`);
-//     break;
-//     }
-//     else{
-//     console.log(`We are sorry. ${order} is not availaible in our bakery`);
-//     }
+// QUESTION # 10 
+
+// for(var i = 5; i<=100; i+5){
+//     console.log(5 * i);
 // }
