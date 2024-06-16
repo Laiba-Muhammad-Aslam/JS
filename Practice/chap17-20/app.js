@@ -118,8 +118,37 @@ if(items.indexOf(order) === -1){
     alert(`${order} is availaible at index ${items.indexOf(order)} in our bakery`);
 }
 
+// QUESTION # 8 
+
+console.log("Largest number in the given array. ")
+var arr = [24, 53, 78, 91, 12];
+var maxNumber = arr[0];
+
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] > maxNumber){
+        maxNumber = arr[i];
+    }
+}
+console.log("Array items: " + arr);
+console.log("The largest number is " + maxNumber);
+
+// QUESTION # 9 
+
+console.log("Smallest number in the given array. ")
+var arr = [24, 53, 78, 91, 12];
+var minNumber = arr[0];
+
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] < minNumber){
+        minNumber = arr[i];
+    }
+}
+console.log("Array items: " + arr);
+console.log("The  smallest number is " + minNumber);
+
 // QUESTION # 10 
 
-// for(var i = 5; i<=100; i+5){
-//     console.log(5 * i);
-// }
+document.write("<br>");
+for(var i = 1; i<=20; i++){
+    document.write(5 * i + " ");
+}
