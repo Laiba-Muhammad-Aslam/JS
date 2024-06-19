@@ -61,3 +61,9 @@ var input = prompt("Enter your word");
 var uppercaseWord = input.toUpperCase();
 console.log(`User Input: ${input}. Upper Case: ${uppercaseWord}`);
 
+// QUESTION # 11 
+
+var input = prompt("Enter your word");
+var lowercaseWord = input.toLowerCase();
+console.log(`User Input: ${input}. Title Case: ${lowercaseWord}`);
+
