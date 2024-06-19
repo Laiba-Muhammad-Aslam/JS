@@ -67,3 +67,25 @@ var input = prompt("Enter your word");
 var lowercaseWord = input.toLowerCase();
 console.log(`User Input: ${input}. Title Case: ${lowercaseWord}`);
 
+// QUESTION # 12 
+
+var num = 35.36;
+var str = num.toString();
+var noDecimalStr = str.replace('.', '');
+// console.log(noDecimalStr);
+// console.log(typeof noDecimalStr);
+console.log(`Number: ${num} Result: ${noDecimalStr}`);
+
+// QUESTION # 13
+
+var userInput = prompt("Enter your name: ");
+
+for(var i = 0; i< userInput.length; i++){
+    if(userInput[i] === "!" || userInput[i] === "," || userInput[i] === "." || userInput[i] === "@"){
+        alert("Please Enter a valid username");
+        break;
+    }
+}
+
+
+
