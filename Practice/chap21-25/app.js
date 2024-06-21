@@ -99,4 +99,18 @@ if(items.indexOf(order) === -1){
     alert(`${order} is availaible at index ${items.indexOf(order)} in our bakery`);
 }
 
+// QUESTION # 16 
 
+var university = "University of Karachi";
+var arr = university.split(" ");
+for(var i = 0; i< arr.length; i++){
+    for(j= 0; j < arr[i].length; j++){
+        console.log(arr[i][j])
+    }
+} 
+
+// QUESTION # 17 
+
+var userInput = prompt("Enter your word");
+var lastChar = userInput.charAt(userInput.length - 1);
+console.log(`User input: ${userInput} Last character of input: ${lastChar}`);
