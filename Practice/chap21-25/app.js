@@ -87,5 +87,16 @@ for(var i = 0; i< userInput.length; i++){
     }
 }
 
+// QUESTION # 14 
+
+var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+var order = prompt("Welcome to ABC Bakery. What do you want to order sir/maam?");
+order = order.toLowerCase();
+
+if(items.indexOf(order) === -1){
+    alert(`We are sorry. ${order} is not availaible in our bakery`)
+}else{
+    alert(`${order} is availaible at index ${items.indexOf(order)} in our bakery`);
+}
 
 
