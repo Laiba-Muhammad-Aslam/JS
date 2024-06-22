@@ -114,3 +114,11 @@ for(var i = 0; i< arr.length; i++){
 var userInput = prompt("Enter your word");
 var lastChar = userInput.charAt(userInput.length - 1);
 console.log(`User input: ${userInput} Last character of input: ${lastChar}`);
+
+// QUESTION # 18 
+
+var str = "The quick brown fox jumps over the lazy dog";
+str = str.toLowerCase();
+// console.log((str.match(/the/g)).length);
+var count = (str.match(/the/g)).length;
+console.log(`Text: ${str} There are ${count} occurrence(s) of word "the"`)
