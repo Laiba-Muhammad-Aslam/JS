@@ -99,6 +99,63 @@ if(items.indexOf(order) === -1){
     alert(`${order} is availaible at index ${items.indexOf(order)} in our bakery`);
 }
 
+// QUESTION # 15 
+
+// function isValidPassword(password) {
+//     const hasAlphabetsAndNumbers = /(?=.*[a-zA-Z])(?=.*[0-9])/.test(password);
+//     const startsWithAlphabet = /^[^0-9]/.test(password);
+//     const isAtLeastSixChars = password.length >= 6;
+    
+//     return hasAlphabetsAndNumbers && startsWithAlphabet && isAtLeastSixChars;
+// }
+
+// let password = prompt("Enter your password:");
+// while (!isValidPassword(password)) {
+//     alert("Password cannot begin with a number");
+//     password = prompt("Enter your password:");
+// }
+// alert("Password is valid!");
+
+// OR 
+
+function validatePassword(password) {
+    const hasAlphabetsAndNumbers = /(?=.*[a-zA-Z])(?=.*[0-9])/.test(password);
+    const startsWithAlphabet = /^[^0-9]/.test(password);
+    const isAtLeastSixChars = password.length >= 6;
+
+    if (!startsWithAlphabet) {
+        return {
+            valid: false,
+            errorMessage: "Password cannot begin with a number."
+        };
+    }
+    if (!isAtLeastSixChars) {
+        return {
+            valid: false,
+            errorMessage: "Password must be at least 6 characters long."
+        };
+    }
+    if (!hasAlphabetsAndNumbers) {
+        return {
+            valid: false,
+            errorMessage: "Password must contain both alphabets and numbers."
+        };
+    }
+    return { valid: true, errorMessage: "" };
+}
+
+let password = prompt("Enter your password:");
+let validation = validatePassword(password);
+
+while (!validation.valid) {
+    alert(validation.errorMessage);
+    password = prompt("Enter your password:");
+    validation = validatePassword(password);
+}
+
+alert("Password is valid!");
+
+
 // QUESTION # 16 
 
 var university = "University of Karachi";
