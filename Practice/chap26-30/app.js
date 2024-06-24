@@ -21,3 +21,24 @@ console.log(`number: ${userInput} round off value: ${round} floor value: ${floor
 var num = +prompt("Enter a number");
 var absoluteNumber = Math.abs(num);
 console.log(`The absolute value of ${num} is ${absoluteNumber}`);
+
+// QUESTION # 4 
+
+var dice = Math.ceil(Math.random() * 6);
+console.log(`Random dice value: ${dice}`);
+
+// QUESTION # 5
+
+var coin = Math.ceil(Math.random() * 2);
+var val;
+if(coin == "1"){
+    val = "Tails" 
+}else{
+    val =  "Heads"
+}
+console.log(`${coin} Random coin value: ${val}`);
+
+// QUESTION # 6
+
+var ranNumber = Math.ceil(Math.random() * 100);
+console.log(`Random number between 1 and 100: ${ranNumber}`);
