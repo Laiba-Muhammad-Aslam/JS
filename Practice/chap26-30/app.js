@@ -42,3 +42,25 @@ console.log(`${coin} Random coin value: ${val}`);
 
 var ranNumber = Math.ceil(Math.random() * 100);
 console.log(`Random number between 1 and 100: ${ranNumber}`);
+
+// QUESTION # 7
+
+var weight = +prompt("Enter your weight in kilogram");
+while (weight<50){
+    var weight = +prompt("Enter your weight in kilogram");
+    console.log(`The weight of user is ${weight} kilograms`)
+}
+
+// QUESTION # 8 
+
+var secretNumber = 17;
+var guessNumber = +prompt("Guess the number between 1 - 20: ");
+
+if(guessNumber == secretNumber){
+    alert("Congratulation you win the game ");
+}
+
+while(guessNumber != secretNumber){
+    alert("Try again!");
+    var guessNumber = +prompt("Guess the number between 1 - 20: ");
+}
