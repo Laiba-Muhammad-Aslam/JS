@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MATH EXPRESSIONS</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
+    <table>
+        <thead>
+            <th>Subject</th>
+            <th>Total Marks</th>
+            <th>Obtained Marks</th>
+            <th>Percentage</th>
+        </thead>
+
+        <tr>
+            <td id="sub1"></td>
+            <td>100</td>
+            <td id="marks1"></td>
+            <td id="p1"></td>
+        </tr>
+
+        <tr>
+            <td id="sub2"></td>
+            <td>100</td>
+            <td id="marks2"></td>
+            <td id="p2"></td>
+        </tr>
+
+        <tr>
+            <td id="sub3"></td>
+            <td>100</td>
+            <td id="marks3"></td>
+            <td id="p3"></td>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>300</td>
+                <td id="totalobtained"></td>
+                <td id="totalpercentage"></td>
+            </tr>
+        </tfoot>
+    </table>
     <script src="app.js"></script>
 </body>
 </html>
