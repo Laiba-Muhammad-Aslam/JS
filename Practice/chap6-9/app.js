@@ -33,3 +33,18 @@ console.log(result);
 
 var userName = prompt("Enter your Name: ");
 alert(`Hello ${userName}`);
+
+// QUESTION # 5
+
+var multiplicationTable = +prompt("Enter a number: ");
+if(multiplicationTable == NaN){
+    for(var i = 1; i<=10; i++){
+        console.log(`5 * ${i} = ` + 5 * i);
+    }
+}else{
+    for(var i = 1; i<=10; i++){
+        console.log(`${multiplicationTable} * ${i} = `+multiplicationTable * i);
+    }
+}
+
+
