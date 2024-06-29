@@ -24,7 +24,7 @@ let valueInNumber = Number(score);
 let isLoggedin = true;
 
 let booleanIsLoggeedIn = Boolean(isLoggedin);
-console.log(booleanIsLoggeedIn);
+// console.log(booleanIsLoggeedIn);
 
 // Conversion in Boolean 
 
@@ -36,5 +36,78 @@ console.log(booleanIsLoggeedIn);
 
 let someNumber = "33";
 let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// OPERATIONS 
+
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+// CONVERSIONS 
+
+// console.log( "2" > 1);
+// console.log( "02" > 1);
+
+// console.log(null > 0);
+// console.log(null == 0);
+// console.log(null >= 0);
+
+console.log(undefined > 0);
+console.log(undefined == 0);
+console.log(undefined >= 0);
+console.log(undefined < 0);
+
+// Premtive data type 
+
+// 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt 
+
+const id = Symbol('123');
+const anotherId = Symbol('123');
+
+console.log(id === anotherId);
+const bigNumber = 34674894940303033763736n;
+
+// Refrence Type (Non Premptive)
+
+// Array, Objects, Functions 
+
+const heros = ["Shaktiman", "Spiderman"];
+let myObj = {
+    myName: "Laiba",
+    age: 20
+}
+
+const myFunction = function(){
+    console.log("Hello World");
+}
+/* JavaScript is a dynamic language and not static, which means that variables can hold values of different types during runtime. */
+
+
+// +++++++++++++++++++++++++++++++++
+
+
+// STACK AND HEAP 
+
+// Stack => Premptive
+// Heap => Non Premptive
+
+let myYoutubeChannel = "Laiba Khan";
+
+let anotherChannel = myYoutubeChannel;
+anotherChannel = "Cooking with me";
+
+console.log(myYoutubeChannel);
+console.log(anotherChannel);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "userybl78"
+}
+
+let userTwo = userOne;
+userTwo.email = "laiba@google.com";
+
+console.log(userOne);
+console.log(userTwo);
