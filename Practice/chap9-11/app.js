@@ -98,3 +98,28 @@ if("car" < "cat"){
     alert("car is smaller than cat");
 }
 
+// QUESTION # 6 
+
+var subj1 = +prompt("Enter marks of subject 1");
+var subj2 = +prompt("Enter marks of subject 2");
+var subj3 = +prompt("Enter marks of subject 3");
+var totalMarks = +prompt("Enter total marks of these subjects");
+var percentage = ((subj1 + subj2 + subj3) * 100) / totalMarks;
+var grade;
+var remarks;
+
+if(percentage >= 80){
+    grade = "A-one";
+    remarks = "Excellent";
+}else if(percentage >= 70){
+    grade = "A";
+    remarks = "Good";
+}else if(percentage >= 60){
+    grade = "B";
+    remarks = "You need to improve";
+}else if(percentage < 60){
+    grade = "Fail";
+    remarks = "Sorry";
+}else{
+    console.log("Invalid Input....")
+}
