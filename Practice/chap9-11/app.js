@@ -123,3 +123,13 @@ if(percentage >= 80){
 }else{
     console.log("Invalid Input....")
 }
+
+// QUESTION # 8
+
+var num = +prompt("Enter a number: ");
+var divisible = num%3;
+if(divisible === 0){
+    alert("Number is divisible by 3")
+}else{
+    alert("Number is not divisible by 3");
+}
