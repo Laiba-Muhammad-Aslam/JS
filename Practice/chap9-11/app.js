@@ -143,3 +143,22 @@ if(evenOrOdd === 0){
 }else{
     alert("Number is Odd")
 }
+
+// QUESTION # 11
+
+var num1 = +prompt("Enter first Number: ");
+var num2 = +prompt("Enter second number: ");
+var operator = prompt("Enter an operator: ");
+if(operator === "+"){
+    alert("Sum is "+ (num1 + num2))
+}else if(operator === "-"){
+    alert("Result " + (num1 - num2))
+}else if(operator === "*"){
+    alert("Result " + (num1 * num2))
+}else if(operator === "/"){
+    alert("Result " + (num1 / num2))
+}else if(operator === "%"){
+    alert("Result " + (num1 % num2))
+}else{
+    alert("Invalid Operator")
+}
