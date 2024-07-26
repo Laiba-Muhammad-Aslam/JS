@@ -133,3 +133,13 @@ if(divisible === 0){
 }else{
     alert("Number is not divisible by 3");
 }
+
+// QUESTION # 9
+
+var number = +prompt("Enter a number: ");
+var evenOrOdd = number % 2;
+if(evenOrOdd === 0){
+    alert("Number is even")
+}else{
+    alert("Number is Odd")
+}
