@@ -156,6 +156,19 @@ if(evenOrOdd === 0){
     alert("Number is Odd")
 }
 
+// QUESTION # 10 
+
+var temperature = +prompt("Enter the value of Temperature: ");
+if(temperature >= 10 && temperature < 20){
+    console.log("OMG! Today’s weather is so Cool.");
+}else if(temperature >= 20 && temperature < 30){
+    console.log("Today’s Weather is cool.");
+}else if(temperature >= 30 && temperature < 40){
+    console.log("The Weather today is Normal.");
+}else{
+    console.log("It is too hot outside.");
+}
+
 // QUESTION # 11
 
 var num1 = +prompt("Enter first Number: ");
