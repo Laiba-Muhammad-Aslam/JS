@@ -124,6 +124,18 @@ if(percentage >= 80){
     console.log("Invalid Input....")
 }
 
+// QUESTION # 7 
+
+var secretNumber = 10;
+var userNumber = +prompt("Guess the secret Number: ");
+if(userNumber === secretNumber){
+    console.log("Bingo! Correct answer");
+}else if(userNumber === (secretNumber + 1)){
+    console.log("Close enough to the correct answer");
+}else{
+    console.log("Try Again!!!")
+}
+
 // QUESTION # 8
 
 var num = +prompt("Enter a number: ");
