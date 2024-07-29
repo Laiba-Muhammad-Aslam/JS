@@ -64,3 +64,10 @@ while(guessNumber != secretNumber){
     alert("Try again!");
     var guessNumber = +prompt("Guess the number between 1 - 20: ");
 }
+
+// DATE METHOD
+
+// QUESTION # 1
+
+var date = new Date();
+console.log(date);
