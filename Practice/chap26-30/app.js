@@ -71,3 +71,8 @@ while(guessNumber != secretNumber){
 
 var date = new Date();
 console.log(date);
+
+// QUESTION # 2
+
+var date = new Date();
+console.log(date.getMonth());
