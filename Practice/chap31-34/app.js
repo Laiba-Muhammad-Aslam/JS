@@ -57,3 +57,38 @@ switch(new Date().getMonth()){
         month = "Dec";
         break;
 }
+
+// QUESTION # 3 
+
+// var date = new Date();
+var day;
+switch(new Date().getDay()){
+    case 0:
+        day = "Sunday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 1:
+        day = "Monday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 2:
+        day = "Tuesday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 3:
+        day = "Wednesday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 4:
+        day = "Thursday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 5:
+        day = "Friday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+    case 6:
+        day = "Saturday";
+        console.log("Today is " + day.substring(0,3));
+        break;
+}
