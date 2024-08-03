@@ -92,3 +92,13 @@ switch(new Date().getDay()){
         console.log("Today is " + day.substring(0,3));
         break;
 }
+
+// QUESTION # 4 
+
+var day = new Date().getDay();
+// console.log(day)
+
+if(day === 0 | day === 6){
+    console.log("It's a Fun day...")
+}
+
