@@ -102,3 +102,13 @@ if(day === 0 | day === 6){
     console.log("It's a Fun day...")
 }
 
+// QUESTION # 5 
+
+var date = new Date().getDate();
+console.log(date);
+
+if(date > 0 && date < 16){
+    console.log("First fifteen days of the month");
+}else if(date >= 16 && date <=31){
+    console.log("Last fisteen days of the month")
+}
