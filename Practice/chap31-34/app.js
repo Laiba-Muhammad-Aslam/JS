@@ -112,3 +112,7 @@ if(date > 0 && date < 16){
 }else if(date >= 16 && date <=31){
     console.log("Last fisteen days of the month")
 }
+
+
+// var date = new Date().getHours();
+// console.log(date);
