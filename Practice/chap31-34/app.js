@@ -116,3 +116,13 @@ if(date > 0 && date < 16){
 
 // var date = new Date().getHours();
 // console.log(date);
+
+// QUESTION # 6 
+
+var now = new Date();
+console.log("Current Date: " + now);
+var epoch = new Date('1970-01-01T00:00:00Z');
+var differenceInMilliseconds = now - epoch;
+console.log("Elapsed milliseconds since January 1, 1970: " + differenceInMilliseconds);
+var minutesSinceEpoch = Math.floor(differenceInMilliseconds / (1000 * 60));
+console.log("Elapsed minutes since January 1, 1970: " + minutesSinceEpoch);
