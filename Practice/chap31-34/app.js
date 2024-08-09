@@ -126,3 +126,13 @@ var differenceInMilliseconds = now - epoch;
 console.log("Elapsed milliseconds since January 1, 1970: " + differenceInMilliseconds);
 var minutesSinceEpoch = Math.floor(differenceInMilliseconds / (1000 * 60));
 console.log("Elapsed minutes since January 1, 1970: " + minutesSinceEpoch);
+
+// QUESTION # 7 
+
+var time = new Date().getHours();
+// console.log(time);
+if(time > 0 && time < 12){
+    console.log("It's AM");
+}else{
+    console.log("It's PM")
+}
