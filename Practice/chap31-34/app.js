@@ -136,3 +136,9 @@ if(time > 0 && time < 12){
 }else{
     console.log("It's PM")
 }
+
+// QUESTION # 8
+
+var date = new Date(2020, 11, 31);
+console.log(date);
+
