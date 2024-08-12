@@ -143,4 +143,14 @@ var date = new Date(2020, 11, 31);
 console.log(date);
 
 
-var date = new Date().getMonth;
+// var date = new Date().getMonth;
+
+
+// QUESTION # 9
+
+var today = new Date().getTime();
+// console.log(today)
+var ramzanDay1 = new Date("11 March 2024").getTime();
+// console.log(ramzanDay1);
+var difference = Math.round((today - ramzanDay1) / (1000 * 3600 * 24));
+console.log(`${difference} days have passed since Ramadan 2024`);
