@@ -154,3 +154,21 @@ var ramzanDay1 = new Date("11 March 2024").getTime();
 // console.log(ramzanDay1);
 var difference = Math.round((today - ramzanDay1) / (1000 * 3600 * 24));
 console.log(`${difference} days have passed since Ramadan 2024`);
+
+// QUESTION # 10 
+
+// var today = new Date().getTime();
+// var date = new Date("05 December 2015").getTime();
+// console.log(today);
+// console.log(date);
+
+
+var referenceDate = new Date("2024-08-13T00:00:00Z");
+// var beginningOf2015 = new Date("2015-01-01T00:00:00Z");
+var beginningOf2015 = new Date("05 December 2015");
+
+var differenceInMilliseconds = referenceDate - beginningOf2015;
+
+var differenceInSeconds = Math.floor(differenceInMilliseconds / 1000);
+
+console.log(`On refrence date Sat Dec 05 2015 ${differenceInSeconds} seconds had passed since beginning of 2015`)
