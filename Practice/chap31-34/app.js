@@ -171,4 +171,13 @@ var differenceInMilliseconds = referenceDate - beginningOf2015;
 
 var differenceInSeconds = Math.floor(differenceInMilliseconds / 1000);
 
-console.log(`On refrence date Sat Dec 05 2015 ${differenceInSeconds} seconds had passed since beginning of 2015`)
+console.log(`On refrence date Sat Dec 05 2015 ${differenceInSeconds} seconds had passed since beginning of 2015`);
+
+
+// QUESTION # 13
+
+var userAge = +prompt("Enter your Age: ");
+var year = new Date().getFullYear();
+// console.log(year);
+console.log(`Your Age is ${userAge}`);
+console.log(`Your birth year is ${year - userAge}`);
