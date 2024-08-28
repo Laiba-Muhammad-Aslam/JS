@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L-20</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <!-- <div>
         <label for="">
             Email
             <input type="email" name="email" id="email" onblur="validation(event)">
@@ -16,9 +17,13 @@
             Password
             <input type="password" name="email" id="email">
         </label>
-    </div>
+    </div> -->
 
-    <div id="main"></div>
+    <div id="main" class="box">
+
+        <button id="btn" class="btn" onclick="updateBtn()">Click me</button>
+    </div>
+    <button onclick="stopCar()">Stop</button>
 
     <script src="index.js"></script>
 </body>
