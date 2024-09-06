@@ -118,3 +118,22 @@ JSON.parse(localStorage.getItem("student"));
 
 var student = JSON.parse(localStorage.getItem("student"));
 student.email = "laiba@google.com";
+localStorage.setItem("student", JSON.stringify(student));
+localStorage.clear();
+
+// SESSION STORAGE 
+
+// session storage is same as local storage but the only difference 
+// here is when we close our tab our stored data would not be there 
+// example: it is maintaining a session (Bank Portal)
+// All methods are same as local storage but use session storage in place of local storage 
+
+
+// COOKIES 
+
+// server sy data aye ga yahan. servere yahan sy data utha bhi sakta hai or store bhi krwa sakt hai.
+
+
+// INDEXED DB 
+
+// Indexed db behaves like a database 
