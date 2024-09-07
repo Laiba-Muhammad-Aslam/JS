@@ -117,3 +117,7 @@ history.forward();
 // SKIP MULTIPLE PAGES 
 history.go(-2); // back 2 pages
 history.go(2); //  Go 2 pages forward
+
+
+// THIS WILL TELL US WHERE WE CAME FROM 
+document.referrer
