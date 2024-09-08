@@ -33,3 +33,26 @@
 // REGEX 
 
 console.log(/^\s+$|^$/gi.test(' '));
+
+// EXCEPTION TRY AND CATCH 
+
+
+// console.log("Hello");
+
+// try{
+//     consoe.log("Hiii");
+// }catch(err){
+//     console.log(err);
+// }
+
+// console.log("Hi Js")
+
+var name = "";
+
+try{
+    if(name === ""){
+        throw "Please enter your name";
+    }
+}catch(err){
+    console.log(err);
+}
