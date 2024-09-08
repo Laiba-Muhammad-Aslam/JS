@@ -52,8 +52,15 @@ console.log(obj);
 
 // IN JS Fetch and Promises have higher  priority than setTimeout, setInterval 
 
-// FOR LOOP RUNS FIRST AS IT IS A SYNCHRONOUS 
+// FOR LOOP RUNS FIRST AS IT IS A SYNCHRONOUS ANS SET TIME IS ASYNCHRONOUS SO FOR RUNS FIRST AND THEN SET TIME OUT RUNS
 for(var i = 0; i< 5; i++){
+    setTimeout(function(){
+        console.log(i);
+    }, 1000);
+}
+
+
+for(let i = 0; i< 5; i++){
     setTimeout(function(){
         console.log(i);
     }, 1000);
