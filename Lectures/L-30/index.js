@@ -61,3 +61,10 @@ console.log(obj.name);
 
 // WE CAN USE OPTIONAL CHAINING ON ARRAYS TOO. 
 // console.log(obj?.schools?.[1]?.name);
+
+let dragBtn = document.getElementById("dragBtn");
+
+function dragStart(event){
+    console.log(event);
+}
+dragBtn.addEventListener("dragstart", dragStart);
