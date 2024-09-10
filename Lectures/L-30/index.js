@@ -39,8 +39,25 @@ let school = "SM Public";
 //     school: school
 // }
 
+// let obj = {
+//     student,
+//     school
+// }
+// console.log(obj);
+
+
+// OPTIONAL CHAINING 
+
 let obj = {
-    student,
-    school
-}
-console.log(obj);
+    name: "Laiba",
+    school: {
+        name: "XYZ"
+    }
+};
+// JAHAN JAHAN LAGTA HO KY WO CHHEZ NHI HO WAHAN WAHAN ? USE KRLO 
+// console.log(obj.school.detail.name); //THIS WILL THROW AN ERROR NOW YPU CAN DO THIS
+console.log(obj?.school?.detail?.name);
+console.log(obj.name);
+
+// WE CAN USE OPTIONAL CHAINING ON ARRAYS TOO. 
+// console.log(obj?.schools?.[1]?.name);
