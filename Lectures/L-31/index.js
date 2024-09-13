@@ -125,3 +125,25 @@ ob.print();
 console.log(2 ** 6);
 Math.pow(2, 6);
 console.log(10_00_00_00_00);
+
+// CLASSES 
+
+class School{
+    constructor(campus){
+        this.org = "XYZ";
+        this.campus = campus;
+    }
+}
+class Student extends School{
+    constructor(campus, name, email){
+        super(campus);
+        this.name = name;
+        this.email = email;
+    }
+    getName(){
+        return this.name;
+    }
+}
+let student1 = new Student("PAF", "Laiba", "laiba@google.com");
+console.log(student1.getName());
+console.log(student1);
