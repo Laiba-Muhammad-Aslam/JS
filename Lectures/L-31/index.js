@@ -55,3 +55,73 @@ let students = [
 //     return a + v.fee;
 // }, 0);
 // console.log("Result " , result);
+
+// ARROW FUNCTION 
+
+// arrow function hamesha function expression hota hai 
+
+// let myFunction = (a, b) => a * b;
+// let myFunction = a => a;
+// console.log(myFunction(6));
+// arrow function ka khud ka this nhi hota yeh parent ko dekta hai.
+
+let abc = (a,b) => {
+    return a * b;
+}
+
+console.log(abc(6,8));
+
+let obj = {
+    name: "Laiba",
+    age: 19,
+    getName: ()=>{
+        console.log(this);
+    }
+}
+obj.getName();
+
+
+function ab(){
+    console.log(arguments);
+}
+ab(6,8);
+
+// there is no arguments like feature in arrow function 
+
+// let ab = () => {
+//     console.log(arguments);
+// }
+// ab(6,8);
+
+// const ob = {
+//     name: "Zaviyar",
+//     age: 9000,
+//     print: function(){
+//         console.log(this);
+//         const print2 = () => {
+//             console.log(this);
+//         }
+//         print2();
+//     }
+// }
+// ob.print();
+
+
+const ob = {
+    name: "Zaviyar",
+    age: 9000,
+    print: function(){
+        console.log(this);
+        function print2() {
+            console.log(this);
+        }
+        print2();
+    }
+}
+ob.print();
+
+// EXPONENT 
+
+console.log(2 ** 6);
+Math.pow(2, 6);
+console.log(10_00_00_00_00);
