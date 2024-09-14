@@ -67,3 +67,17 @@ export default getTime;
 // BEFORE ES6 
 
 // module.export = getDate;
+
+// TO FIND CURRENT LOCATION 
+
+navigator.geolocation.getCurrentPosition((location) => {
+    console.log(location)
+})
+
+
+// ASSIGNMENT 
+
+// Weather App (https://openweathermap.org/) use current weather data
+// News App
+// E-Commerce
+// Football

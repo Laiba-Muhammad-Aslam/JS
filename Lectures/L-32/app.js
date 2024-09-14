@@ -22,3 +22,21 @@ let getDate = () => {
 // BEFORE ES6 
 
 // const getDate = require("./index.js");
+
+// API 
+
+let getData = (cb) => {
+    fetch("https://fakestoreapi.com/products")
+    .then((res) => res.json())
+    .then((res) => cb(res));
+}
+getData((data) => {
+    console.log(data);
+});
+getData((data) => {
+    console.log(data);
+});
+getData((data) => {
+    console.log(data);
+});
+
