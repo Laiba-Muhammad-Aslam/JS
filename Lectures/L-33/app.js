@@ -67,14 +67,95 @@ let getCategories = () => {
 
 // Multiple promises
 
-let getData = async () => {
-    try{
-        let promises = [];
-        promises.push(getProducts(), getCategories());
-        let final = await Promise.all(promises);
-        console.log("final ", final);
-    }catch(err){
-        console.error(err);
+// let getData = async () => {
+//     try{
+//         let promises = [];
+//         promises.push(getProducts(), getCategories());
+//         let final = await Promise.all(promises);
+//         console.log("final ", final);
+//     }catch(err){
+//         console.error(err);
+//     }
+// }
+// getData();
+
+// FIREBASE 
+
+import {auth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "./firebase.js";
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        console.log("user", user)
+    } else {
+        console.log("user not exist")
     }
+  });
+  
+// SIGN UP 
+
+/*
+let signup = () => {
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    createUserWithEmailAndPassword(auth, email.value, password.value)
+  .then((res) => {
+    // Signed up 
+    // const user = userCredential.user;
+    console.log("user", res.user);
+
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    // const errorMessage = error.message;
+    // console.log(error);
+    // OR 
+    console.log(error.message);
+
+  });
 }
-getData();
+
+let signupBtn = document.getElementById("signupBtn");
+signupBtn.addEventListener("click", signup);
+
+*/
+
+// SIGN IN 
+
+let signup = () => {
+    let email = document.getElementById("email");
+    let password = document.getElementById("password");
+    signInWithEmailAndPassword(auth, email.value, password.value)
+  .then((res) => {
+    // Signed up 
+    // const user = userCredential.user;
+    console.log("user", res.user);
+
+  })
+  .catch((error) => {
+    // const errorCode = error.code;
+    // const errorMessage = error.message;
+    // console.log(error);
+    // OR 
+    console.log(error.message);
+
+  });
+}
+
+let signupBtn = document.getElementById("signupBtn");
+signupBtn.addEventListener("click", signup);
+
+// LOGOUT 
+
+
+let logout = () => {
+    signOut(auth).then(() => {
+        // Sign-out successful.
+        console.log("Sign Out successful")
+      }).catch((error) => {
+        // An error happened.
+      });
+}
+
+
+let logoutBtn = document.getElementById("logoutBtn");
+logoutBtn.addEventListener("click", logout)
