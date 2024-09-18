@@ -81,7 +81,14 @@ let getCategories = () => {
 
 // FIREBASE 
 
-import {auth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signOut} from "./firebase.js";
+import {
+  auth, 
+  createUserWithEmailAndPassword, 
+  onAuthStateChanged, 
+  signInWithEmailAndPassword, 
+  signOut,
+  sendEmailVerification
+} from "./firebase.js";
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
@@ -159,3 +166,15 @@ let logout = () => {
 
 let logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", logout)
+
+// EMAIL VERIFICATION 
+
+
+// let verifyBtn = document.getElementById("verifyBtn");
+// verifyBtn.addEventListener("click", ()=>{
+//   sendEmailVerification(auth.currentUser)
+//   .then(() => {
+//     console.log("sent")
+//   });
+// })
+
