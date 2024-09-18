@@ -87,7 +87,8 @@ import {
   onAuthStateChanged, 
   signInWithEmailAndPassword, 
   signOut,
-  sendEmailVerification
+  sendEmailVerification,
+  RecaptchaVerifier
 } from "./firebase.js";
 
 onAuthStateChanged(auth, (user) => {
@@ -178,3 +179,16 @@ logoutBtn.addEventListener("click", logout)
 //   });
 // })
 
+
+// RECAPTCHA 
+
+window.recaptchaVerifier = new RecaptchaVerifier(auth, 'sign-in-button', {
+  'size': 'invisible',
+  'callback': (response) => {
+    // reCAPTCHA solved, allow signInWithPhoneNumber.
+    onSignInSubmit();
+  }
+});
+
+// firebase phone Node. format
+// 923245678908
