@@ -91,7 +91,8 @@ import {
   RecaptchaVerifier,
   googleProvider,
   signInWithPopup,
-  GoogleAuthProvider
+  GoogleAuthProvider,
+  signInWithPhoneNumber
 } from "./firebase.js";
 
 onAuthStateChanged(auth, (user) => {
@@ -132,6 +133,8 @@ signupBtn.addEventListener("click", signup);
 
 // SIGN IN 
 
+/*
+
 let signup = () => {
     let email = document.getElementById("email");
     let password = document.getElementById("password");
@@ -155,8 +158,11 @@ let signup = () => {
 let signupBtn = document.getElementById("signupBtn");
 signupBtn.addEventListener("click", signup);
 
+*/
+
 // LOGOUT 
 
+/*
 
 let logout = () => {
     signOut(auth).then(() => {
@@ -170,6 +176,8 @@ let logout = () => {
 
 let logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", logout)
+
+*/
 
 // EMAIL VERIFICATION 
 
@@ -199,23 +207,81 @@ logoutBtn.addEventListener("click", logout)
 
 // LOGIN WITH GOOGLE 
 
-let loginWithGoogle = () => {
-  signInWithPopup(auth, googleProvider)
-  .then((result) => {
-    const credential = GoogleAuthProvider.credentialFromResult(result);
-    const token = credential.accessToken;
+// let loginWithGoogle = () => {
+//   signInWithPopup(auth, googleProvider)
+//   .then((result) => {
+//     const credential = GoogleAuthProvider.credentialFromResult(result);
+//     const token = credential.accessToken;
+//     const user = result.user;
+//     console.log("token", token);
+//     console.log("user", user);
+//   }).catch((error) => {
+//     const errorCode = error.code;
+//     // const errorMessage = error.message;
+//     // const email = error.customData.email;
+//     const credential = GoogleAuthProvider.credentialFromError(error);
+//     console.log("error", errorCode, credential);
+
+//   });
+// }
+
+// let googleBtn = document.getElementById("googleBtn");
+// googleBtn.addEventListener("click", loginWithGoogle);
+
+
+// PHONE NUMBER AND OTP VERIFICATION 
+
+const appVerifier = window.recaptchaVerifier;
+
+let sendOtp = () => {
+  // const auth = getAuth();
+  let phone = document.getElementById("phone");
+  
+  signInWithPhoneNumber(auth, `+${phone.value}`, appVerifier)
+    .then((confirmationResult) => {
+      console.log(phone)
+      window.confirmationResult = confirmationResult;
+      console.log("confirmation Result", confirmationResult);
+    }).catch((error) => {
+      console.log("error", error);
+    });
+}
+
+// window.recaptchaVerifier = new RecaptchaVerifier(auth, 'phoneBtn', {
+//   'size': 'invisible',
+//   'callback': (response) => {
+//     // reCAPTCHA solved, allow signInWithPhoneNumber.
+//     sendOtp();
+//   }
+// });
+
+window.recaptchaVerifier = new RecaptchaVerifier(auth, 'recaptcha', {
+  'size': 'normal',
+  'callback': (response) => {
+    // reCAPTCHA solved, allow signInWithPhoneNumber.
+    // ...
+  },
+  'expired-callback': () => {
+    // Response expired. Ask user to solve reCAPTCHA again.
+    // ...
+  }
+});
+
+
+let phoneBtn = document.getElementById("phoneBtn");
+phoneBtn.addEventListener("click", sendOtp);
+
+
+let verify = () => {
+  let otp = document.getElementById("otp");
+  confirmationResult.confirm(otp.value).then((result) => {
     const user = result.user;
-    console.log("token", token);
     console.log("user", user);
   }).catch((error) => {
-    const errorCode = error.code;
-    // const errorMessage = error.message;
-    // const email = error.customData.email;
-    const credential = GoogleAuthProvider.credentialFromError(error);
-    console.log("error", errorCode, credential);
-
+    console.log("error", error);
   });
 }
 
-let googleBtn = document.getElementById("googleBtn");
-googleBtn.addEventListener("click", loginWithGoogle);
+
+let verifyBtn = document.getElementById("verifyBtn");
+verifyBtn.addEventListener("click", verify);
