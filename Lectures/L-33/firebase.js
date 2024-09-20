@@ -7,7 +7,9 @@
   signInWithEmailAndPassword,
   signOut, 
   sendEmailVerification,
-  RecaptchaVerifier
+  RecaptchaVerifier,
+  GoogleAuthProvider,
+  signInWithPopup
   } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
  // TODO: Add SDKs for Firebase products that you want to use
  // https://firebase.google.com/docs/web/setup#available-libraries
@@ -26,6 +28,7 @@
  const app = initializeApp(firebaseConfig);
 
  const auth = getAuth(app);
+ const googleProvider = new GoogleAuthProvider();
 
  export{
     auth,
@@ -34,5 +37,8 @@
     signInWithEmailAndPassword,
     signOut,
     sendEmailVerification,
-    RecaptchaVerifier
+    RecaptchaVerifier,
+    googleProvider,
+    signInWithPopup,
+    GoogleAuthProvider
  }

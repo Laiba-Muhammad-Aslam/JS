@@ -88,7 +88,10 @@ import {
   signInWithEmailAndPassword, 
   signOut,
   sendEmailVerification,
-  RecaptchaVerifier
+  RecaptchaVerifier,
+  googleProvider,
+  signInWithPopup,
+  GoogleAuthProvider
 } from "./firebase.js";
 
 onAuthStateChanged(auth, (user) => {
@@ -192,3 +195,27 @@ logoutBtn.addEventListener("click", logout)
 
 // firebase phone Node. format
 // 923245678908
+
+
+// LOGIN WITH GOOGLE 
+
+let loginWithGoogle = () => {
+  signInWithPopup(auth, googleProvider)
+  .then((result) => {
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+    const token = credential.accessToken;
+    const user = result.user;
+    console.log("token", token);
+    console.log("user", user);
+  }).catch((error) => {
+    const errorCode = error.code;
+    // const errorMessage = error.message;
+    // const email = error.customData.email;
+    const credential = GoogleAuthProvider.credentialFromError(error);
+    console.log("error", errorCode, credential);
+
+  });
+}
+
+let googleBtn = document.getElementById("googleBtn");
+googleBtn.addEventListener("click", loginWithGoogle);
