@@ -140,7 +140,7 @@ if(time > 0 && time < 12){
 // QUESTION # 8
 
 var date = new Date(2020, 11, 31);
-console.log(date);
+console.log("Later date " + date);
 
 
 // var date = new Date().getMonth;
@@ -172,6 +172,15 @@ var differenceInMilliseconds = referenceDate - beginningOf2015;
 var differenceInSeconds = Math.floor(differenceInMilliseconds / 1000);
 
 console.log(`On refrence date Sat Dec 05 2015 ${differenceInSeconds} seconds had passed since beginning of 2015`);
+
+// Question # 11 
+
+var today = new Date();
+var currentHour = today.getHours();
+console.log(currentHour);
+var hourAhead = currentHour + 1;
+console.log(`Current Date ${today} ${currentHour}`)
+console.log(`1 hour ago, it will be ${today.getDate()} ${hourAhead}`)
 
 
 // QUESTION # 13
