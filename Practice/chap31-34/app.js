@@ -182,6 +182,11 @@ var hourAhead = currentHour + 1;
 console.log(`Current Date ${today} ${currentHour}`)
 console.log(`1 hour ago, it will be ${today.getDate()} ${hourAhead}`)
 
+// Question # 12 
+
+var currentDate = new Date();
+currentDate.setFullYear(currentDate.getFullYear() - 100);
+console.log(`100 Years back ${currentDate.toDateString()}`);
 
 // QUESTION # 13
 
