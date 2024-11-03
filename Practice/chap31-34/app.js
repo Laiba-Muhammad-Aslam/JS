@@ -195,3 +195,62 @@ var year = new Date().getFullYear();
 // console.log(year);
 console.log(`Your Age is ${userAge}`);
 console.log(`Your birth year is ${year - userAge}`);
+
+
+// Question # 14 
+
+var customerName = prompt("Enter Your Name");
+var currentMonth = new Date().getMonth();
+console.log(currentMonth)
+switch(currentMonth){
+    case 0:
+        month = "Jan";
+        break;
+    case 1:
+        month = "Feb";
+        break;
+    case 2:
+        month = "March";
+        break;
+    case 3:
+        month = "April";
+        break;
+    case 4:
+        month = "May";
+        break;
+    case 5:
+        month = "June";
+        break;
+    case 6:
+        month = "July";
+        break;
+    case 7:
+        month = "August";
+        break;
+    case 8:
+        month = "September";
+        break;
+    case 9:
+        month = "Oct";
+        break;
+    case 10:
+        month = "Nov";
+        break;
+    case 11:
+        month = "Dec";
+        break;
+}
+var units = +prompt("Enter the Number of units");
+var chargesPerUnit = +prompt("Enter charges per unit");
+var netAmount = units * chargesPerUnit;
+var lateCharges = 350;
+var grossAmount = netAmount + lateCharges;
+
+document.write("<h1>K-Electric Bill</p>")
+document.write(`<p>Customer name: ${customerName}</p>`)
+document.write(`<p>Month: ${month}</p>`)
+document.write(`<p>Number of units: ${units}</p>`)
+document.write(`<p>Charges per units: ${chargesPerUnit}</p>`)
+document.write(`<p>Net Amount Payable (within Due Date): ${netAmount}</p>`)
+document.write(`<p>Late payment surcharge: ${lateCharges}</p>`)
+document.write(`<p>Gross Amount Payable (after Due Date): ${grossAmount}</p>`)
