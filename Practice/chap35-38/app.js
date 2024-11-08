@@ -46,7 +46,15 @@ function calculator(num1, numb2, operator){
         return "Invalid Operation"
     }
 }
-var num1 = +prompt("Enter First Number: ");
-var num2 = +prompt("Enter Second Number: ");
-var operator = prompt("Enter Operator: ");
-alert(calculator(num1, num2, operator));
+// var num1 = +prompt("Enter First Number: ");
+// var num2 = +prompt("Enter Second Number: ");
+// var operator = prompt("Enter Operator: ");
+// alert(calculator(num1, num2, operator));
+
+// QUESTION # 5 
+
+function squares(num){
+    return num * num;
+}
+var num = +prompt("Enter a Number: ")
+alert(squares(num));
