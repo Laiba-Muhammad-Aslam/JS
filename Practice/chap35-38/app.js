@@ -56,5 +56,17 @@ function calculator(num1, numb2, operator){
 function squares(num){
     return num * num;
 }
-var num = +prompt("Enter a Number: ")
-alert(squares(num));
+// var num = +prompt("Enter a Number: ")
+// alert(squares(num));
+
+// QUESTION # 6 
+
+function calculateFactorial(num) {
+    var fact = 1;
+    for (var i = 1; i <= num; i++) { 
+        fact *= i;  
+    }
+    return fact;
+}
+var num = +prompt("Enter a Number: ");
+alert(calculateFactorial(num));
