@@ -68,5 +68,16 @@ function calculateFactorial(num) {
     }
     return fact;
 }
-var num = +prompt("Enter a Number: ");
-alert(calculateFactorial(num));
+// var num = +prompt("Enter a Number: ");
+// alert(calculateFactorial(num));
+
+// QUESTION # 7 
+
+function counting(start, end){
+    for(var i = start; i <= end; i++){
+        console.log(i);
+    }
+}
+var start = +prompt("Enter the digit you want to start the Counting");
+var end = +prompt("Enter the digit you want to end the Counting");
+counting(start, end);
