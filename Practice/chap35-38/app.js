@@ -78,6 +78,20 @@ function counting(start, end){
         console.log(i);
     }
 }
-var start = +prompt("Enter the digit you want to start the Counting");
-var end = +prompt("Enter the digit you want to end the Counting");
-counting(start, end);
+// var start = +prompt("Enter the digit you want to start the Counting");
+// var end = +prompt("Enter the digit you want to end the Counting");
+// counting(start, end);
+
+// QUESTION # 8 
+
+function  calculateHypotenuse(base, perpendicular){
+    function calculateSquare() {
+        var square = ( base * base ) + ( perpendicular * perpendicular );
+        var hypotenuse = square * square;
+        console.log(hypotenuse)
+    }
+    calculateSquare()
+}
+var base = +prompt("Enter the value of Base: ");
+var perpendicular = +prompt("Enter the value of Perpendicular: ");
+calculateHypotenuse(base, perpendicular);
