@@ -93,6 +93,13 @@ function  calculateHypotenuse(base, perpendicular){
     }
     calculateSquare()
 }
-var base = +prompt("Enter the value of Base: ");
-var perpendicular = +prompt("Enter the value of Perpendicular: ");
-calculateHypotenuse(base, perpendicular);
+// var base = +prompt("Enter the value of Base: ");
+// var perpendicular = +prompt("Enter the value of Perpendicular: ");
+// calculateHypotenuse(base, perpendicular);
+
+// QUESTION # 9 
+
+function areaOfRectangle(width, height){
+    return area = width * height;
+}
+console.log(areaOfRectangle(12, 12));
