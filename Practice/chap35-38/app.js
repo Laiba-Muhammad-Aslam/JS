@@ -102,4 +102,24 @@ function  calculateHypotenuse(base, perpendicular){
 function areaOfRectangle(width, height){
     return area = width * height;
 }
-console.log(areaOfRectangle(12, 12));
+// console.log(areaOfRectangle(12, 12));
+
+// QUESTION # 10 
+
+function checkPalindrome(word){
+    let userWord = word.toLowerCase();;
+    let palindromeWord = "";
+    for(let i = userWord.length-1; i>=0; i--){
+        // console.log(userWord[i]);
+        palindromeWord+= userWord[i];
+    }
+    if(userWord == palindromeWord){
+        console.log("Yes it is a Palindrome");
+    }else{
+        console.log("No, It is not a Palindrome");
+    }
+}
+checkPalindrome("madam");
+checkPalindrome("mango");
+checkPalindrome("Mango");   
+checkPalindrome("Racecar");
