@@ -119,7 +119,25 @@ function checkPalindrome(word){
         console.log("No, It is not a Palindrome");
     }
 }
-checkPalindrome("madam");
-checkPalindrome("mango");
-checkPalindrome("Mango");   
-checkPalindrome("Racecar");
+// checkPalindrome("madam");
+// checkPalindrome("mango");
+// checkPalindrome("Mango");   
+// checkPalindrome("Racecar");
+
+// QUESTION # 11 
+
+function convertUpperCase(str){
+    let newStr = str[0].toUpperCase();
+
+    for(let i = 1; i < str.length; i++){
+        if(str[i - 1] === " "){ 
+            newStr += str[i].toUpperCase();
+        }else{
+            newStr += str[i];
+        }
+    }
+    
+    console.log(newStr);
+}
+
+convertUpperCase("the quick brown fox");
