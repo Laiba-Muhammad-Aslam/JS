@@ -155,4 +155,19 @@ function checkLogestString(str){
     }
     console.log("The longest word is:", longestWord);
 }
-checkLogestString("Web Development Tutorial");
+// checkLogestString("Web Development Tutorial");
+
+// QUESTION # 13 
+
+function checkOccurrence(str, letter){
+    let userLetter = letter;
+    let count = 0;
+    for(let i = 0; i<str.length; i++){
+        if(str[i] == userLetter){
+            count++;
+        }
+    }
+    console.log(userLetter, " " , count);
+}
+checkOccurrence("JSResourceS.com", "o");
+checkOccurrence("Web Development Tutorial", "e");
