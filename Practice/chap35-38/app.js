@@ -169,5 +169,19 @@ function checkOccurrence(str, letter){
     }
     console.log(userLetter, " " , count);
 }
-checkOccurrence("JSResourceS.com", "o");
-checkOccurrence("Web Development Tutorial", "e");
+// checkOccurrence("JSResourceS.com", "o");
+// checkOccurrence("Web Development Tutorial", "e");
+
+// QUESTION # 14 
+ 
+function calcCircumference(radius){
+    let circumference = 2 * Math.PI * radius;
+    return `The circumference is ${circumference}`;
+}
+console.log(calcCircumference(5));
+
+function calcArea(radius){
+    let area = Math.PI * radius * radius;
+    return `The area is ${area}`;
+}
+console.log(calcArea(5));
