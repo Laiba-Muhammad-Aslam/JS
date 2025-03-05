@@ -34,4 +34,27 @@ function areaOfTriangle(a,b,c){
     let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
     return `Area of Triangle is ${area}cm2`;
 }
-console.log(areaOfTriangle(5, 12, 13));
+// console.log(areaOfTriangle(5, 12, 13));
+
+// QUESTION # 4 
+
+var avg;
+var studentAvg;
+
+function average(subj1, subj2, subj3){
+    avg = (subj1 + subj2 + subj3) / 3; 
+    return avg;  
+}
+
+function percentage(averageMarks, totalMarks){
+    let percentage = (averageMarks / totalMarks) * 100;
+    return percentage;
+}
+
+function studentResult(subj1, subj2, subj3){
+    let avgMarks = average(subj1, subj2, subj3); 
+    let percent = percentage(avgMarks, 100).toFixed(2); 
+    return `Average is ${avgMarks} and your percentage is ${percent}%`;
+}
+
+console.log(studentResult(78, 98, 90));
