@@ -57,4 +57,20 @@ function studentResult(subj1, subj2, subj3){
     return `Average is ${avgMarks} and your percentage is ${percent}%`;
 }
 
-console.log(studentResult(78, 98, 90));
+// console.log(studentResult(78, 98, 90));
+
+// QUESTION # 5 
+
+function indexOf(char){
+    let str = "You have learned the function indexOf. Code your own custom function that will perform the same functionality. You can code for single character as of now."
+    for(let i = 0; i <= str.length; i++){
+        if(char === str[i]){
+            console.log(`Index of ${char} is ${i}`);
+            return;
+        }
+    }
+    console.log(`Character ${char} not found in the string`);
+}
+indexOf("Y");
+indexOf("h");
+indexOf("f");
