@@ -71,6 +71,29 @@ function indexOf(char){
     }
     console.log(`Character ${char} not found in the string`);
 }
-indexOf("Y");
-indexOf("h");
-indexOf("f");
+// indexOf("Y");
+// indexOf("h");
+// indexOf("f");
+
+// QUESTION # 6 
+
+function deleteVowels(str){
+    let userStr = "";
+    let arr = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+    if(str.length >=25){
+        return;
+    }else{
+        for(let i =0; i< str.length; i++){
+            if(arr.includes(str[i])){
+                userStr = userStr;
+            }else{
+                userStr+= str[i];
+            }
+        }
+        console.log(userStr);
+    }
+    
+  
+}
+deleteVowels("Write a function to delete all vowels from a sentence");
+deleteVowels("Write");
