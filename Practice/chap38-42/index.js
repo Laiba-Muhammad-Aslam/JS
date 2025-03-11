@@ -95,5 +95,27 @@ function deleteVowels(str){
     
   
 }
-deleteVowels("Write a function to delete all vowels from a sentence");
-deleteVowels("Write");
+// deleteVowels("Write a function to delete all vowels from a sentence");
+// deleteVowels("Write");
+
+// QUESTION # 8
+
+function meter(km){
+    return km * 1000;
+}
+console.log("Meters ", meter(2));
+
+function feet(km){
+    return km * 3280.8399;
+}
+console.log("Feet ",feet(2));
+
+function inches(km){
+    return km * 39370.0787;
+}
+console.log("Inches ", inches(2));
+
+function centimeters(km){
+    return km * 100000;
+}
+console.log("Centimeters ", centimeters(2));
