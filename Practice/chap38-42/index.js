@@ -98,17 +98,70 @@ function deleteVowels(str){
 // deleteVowels("Write a function to delete all vowels from a sentence");
 // deleteVowels("Write");
 
+// QUESTION # 7 
+
+function countVowelPairs(text) {
+    const vowels = "aeiou";
+    let count = 0;
+
+    text = text.toLowerCase();
+
+    for (let i = 0; i < text.length - 1; i++) {
+        let currentChar = text[i];
+        let nextChar = text[i + 1];
+
+        if (vowels.includes(currentChar) && vowels.includes(nextChar)) {
+            switch (currentChar + nextChar) {
+                case 'aa':
+                case 'ae':
+                case 'ai':
+                case 'ao':
+                case 'au':
+                case 'ea':
+                case 'ee':
+                case 'ei':
+                case 'eo':
+                case 'eu':
+                case 'ia':
+                case 'ie':
+                case 'ii':
+                case 'io':
+                case 'iu':
+                case 'oa':
+                case 'oe':
+                case 'oi':
+                case 'oo':
+                case 'ou':
+                case 'ua':
+                case 'ue':
+                case 'ui':
+                case 'uo':
+                    count++;
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
+    return count;
+}
+
+const sentence = "Pleases read this application and give me gratuity";
+const vowelPairCount = countVowelPairs(sentence);
+console.log("Number of vowel pairs:", vowelPairCount);
+
 // QUESTION # 8
 
 function meter(km){
     return km * 1000;
 }
-console.log("Meters ", meter(2));
+// console.log("Meters ", meter(2));
 
 function feet(km){
     return km * 3280.8399;
 }
-console.log("Feet ",feet(2));
+// console.log("Feet ",feet(2));
 
 function inches(km){
     return km * 39370.0787;
@@ -118,4 +171,4 @@ console.log("Inches ", inches(2));
 function centimeters(km){
     return km * 100000;
 }
-console.log("Centimeters ", centimeters(2));
+// console.log("Centimeters ", centimeters(2));
