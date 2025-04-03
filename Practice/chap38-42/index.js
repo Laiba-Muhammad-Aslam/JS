@@ -172,3 +172,16 @@ function centimeters(km){
     return km * 100000;
 }
 // console.log("Centimeters ", centimeters(2));
+
+// QUESTION # 9 
+
+function overtimePay(hours){
+    let rph = 12;
+    if(hours > 40){
+        let extraHours = Math.floor(hours - 40); 
+        return extraHours * rph;
+    }
+    return 0;
+}
+console.log("Overtime pay of employee is: ",overtimePay(42.6));
+console.log("Overtime pay of employee is: ", overtimePay(39)); 
