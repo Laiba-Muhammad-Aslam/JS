@@ -183,5 +183,24 @@ function overtimePay(hours){
     }
     return 0;
 }
-console.log("Overtime pay of employee is: ",overtimePay(42.6));
-console.log("Overtime pay of employee is: ", overtimePay(39)); 
+// console.log("Overtime pay of employee is: ",overtimePay(42.6));
+// console.log("Overtime pay of employee is: ", overtimePay(39)); 
+
+// QUESTION # 10 
+
+function calculateNotes(amount) {
+    let note100 = Math.floor(amount / 100);
+    amount %= 100;
+
+    let note50 = Math.floor(amount / 50);
+    amount %= 50;
+
+    let note10 = Math.floor(amount / 10);
+
+    console.log("100 notes: " + note100);
+    console.log("50 notes: " + note50);
+    console.log("10 notes: " + note10);
+}
+
+let userInput = prompt("Enter amount to withdraw");
+calculateNotes(parseInt(userInput));  
