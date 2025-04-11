@@ -16,18 +16,10 @@ for(let i = 0; i < shopNow.length; i++){
 // Question # 3 
 
 let deleteBtn = document.getElementsByClassName("deleteBtn");
-// console.log(deleteBtn);
+
 for(let i = 0; i < deleteBtn.length; i++){
-    deleteBtn[i].addEventListener("click", () => {
-        if(deleteBtn[i] == 0){
-            let deleteElement = deleteBtn[i].isSameNode;
-            console.log(deleteBtn[i].parentNode.parentNode);
-            deleteElement.remove();
-        }else{
-            let deleteElement = deleteBtn[i].parentNode.parentNode;
-            console.log(deleteBtn[i].parentNode.parentNode);
-            deleteElement.remove();
-        }
-      
-})
+    deleteBtn[i].addEventListener("click", function() { 
+        let rowToDelete = this.parentNode.parentNode; 
+        rowToDelete.remove();
+    });
 }
