@@ -23,3 +23,13 @@ for(let i = 0; i < deleteBtn.length; i++){
         rowToDelete.remove();
     });
 }
+
+// Question # 4 
+
+let changeImg = document.getElementById("changeImg");
+changeImg.addEventListener("mouseover" , ()=> {
+    changeImg.src = "assests/samsung.png"
+})
+changeImg.addEventListener("mouseout" , ()=> {
+    changeImg.src = "assests/iphone.jpg"
+})
