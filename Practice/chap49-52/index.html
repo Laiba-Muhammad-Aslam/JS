@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chap 49-52</title>
+    <style>
+      #editForm {
+        display: none;
+        margin-top: 20px;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+    </style>
   </head>
   <body>
     <!-- Question 1  -->
@@ -24,6 +37,38 @@
     >
       Read More
     </p>
+
+    <!-- Question # 3  -->
+
+    <h2>Add Student</h2>
+    <form id="studentForm">
+      Name: <input type="text" id="name" required /> Age:
+      <input type="number" id="age" required /> Class:
+      <input type="text" id="class" required />
+      <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student Records</h2>
+    <table id="studentTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Class</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <form id="editForm">
+      <h3>Edit Student</h3>
+      Name: <input type="text" id="editName" required /> Age:
+      <input type="number" id="editAge" required /> Class:
+      <input type="text" id="editClass" required />
+      <button type="submit">Update</button>
+    </form>
+
     <script src="index.js"></script>
   </body>
 </html>
