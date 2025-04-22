@@ -13,3 +13,10 @@ let elementsOfClassRender = document.getElementsByClassName("render");
 Array.from(elementsOfClassRender).forEach(elem => {
     console.log(elem.innerHTML);
 });
+
+// Part iv 
+
+let firstChild = mainContent.firstElementChild;
+console.log(firstChild.textContent);
+let lastChild = mainContent.lastElementChild;
+console.log(lastChild.textContent);
