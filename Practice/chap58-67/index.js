@@ -16,6 +16,13 @@ Array.from(elementsOfClassRender).forEach(elem => {
 
 // Part iv 
 
+let firstName = document.getElementById("first-name");
+firstName.value = "Laiba Aslam";
+console.log(firstName)
+
+// Question 2 
+// Part iv 
+
 let firstChild = mainContent.firstElementChild;
 console.log(firstChild.textContent);
 let lastChild = mainContent.lastElementChild;
