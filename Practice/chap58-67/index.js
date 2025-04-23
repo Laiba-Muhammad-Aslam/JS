@@ -18,7 +18,17 @@ Array.from(elementsOfClassRender).forEach(elem => {
 
 let firstName = document.getElementById("first-name");
 firstName.value = "Laiba Aslam";
-console.log(firstName)
+console.log(firstName);
+
+// Part v 
+
+let lastName = document.getElementById("last-name");
+lastName.value = "Muhammad Aslam";
+console.log(lastName);
+
+let email = document.getElementById("email");
+email.value = "laiba@google.com";
+console.log(email);
 
 // Question 2 
 // Part iv 
