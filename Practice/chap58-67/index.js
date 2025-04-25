@@ -31,6 +31,12 @@ email.value = "laiba@google.com";
 console.log(email);
 
 // Question 2 
+
+// Part i 
+
+let nodeType = document.getElementById("form-content").nodeType;
+console.log(nodeType);
+
 // Part iv 
 
 let firstChild = mainContent.firstElementChild;
