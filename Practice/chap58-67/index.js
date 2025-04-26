@@ -37,6 +37,13 @@ console.log(email);
 let nodeType = document.getElementById("form-content").nodeType;
 console.log(nodeType);
 
+// Part ii 
+
+let nodeTypeOfElem = document.getElementById("lastName");
+let lastNameNodeType = nodeTypeOfElem.nodeType;
+let lastNameChildsNodeType = Array.from(nodeTypeOfElem.childNodes).map(child => child.nodeType);
+console.log(lastNameNodeType, lastNameChildsNodeType);
+
 // Part iv 
 
 let firstChild = mainContent.firstElementChild;
