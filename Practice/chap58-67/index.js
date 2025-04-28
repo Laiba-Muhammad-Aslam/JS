@@ -50,3 +50,8 @@ let firstChild = mainContent.firstElementChild;
 console.log(firstChild.textContent);
 let lastChild = mainContent.lastElementChild;
 console.log(lastChild.textContent);
+
+// Part v 
+
+let lasNameSib = document.getElementById("lastName");
+console.log(lasNameSib.nextSibling, lasNameSib.previousSibling);
