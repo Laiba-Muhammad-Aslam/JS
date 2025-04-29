@@ -55,3 +55,7 @@ console.log(lastChild.textContent);
 
 let lasNameSib = document.getElementById("lastName");
 console.log(lasNameSib.nextSibling, lasNameSib.previousSibling);
+
+// Part vi 
+
+console.log("Email parent Node and Email Node Type: ",email.parentNode, email.nodeType);
