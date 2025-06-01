@@ -54,3 +54,22 @@ function countVowels(str){
     return count;
 }
 console.log(countVowels("Laiba"));
+
+// Check for Palindrome
+
+function palindrome(str){
+    let userString = str.toLowerCase();
+    let palindromestr = ""
+
+    for(let i = userString.length - 1; i>=0; i--){
+        palindromestr+= userString[i];
+    }
+    
+    if(palindromestr === userString){
+        return "It is a Palindrome";
+    }else{
+        return "It is not a Palindrome"
+    }
+}
+console.log(palindrome("Laiba"));
+console.log(palindrome("Madam"));
