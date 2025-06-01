@@ -35,3 +35,22 @@ function reverseString(str){
     return reverseStr;
 }
 console.log(reverseString("Laiba")) // abiaL
+
+// Count Vowels in a String
+
+function countVowels(str){
+    let vowels = ["a", "e", "i", "o", "u"];
+    let count = 0
+
+    let userString = str.toLowerCase();
+
+    for(let i = 0; i<= userString.length - 1; i++){
+        if(vowels.includes(userString[i])){
+            // console.log("Vowel Spotted")
+            count++;
+        }
+    }
+    // console.log("yeahhh")
+    return count;
+}
+console.log(countVowels("Laiba"));
