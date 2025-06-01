@@ -91,3 +91,63 @@ function maxNumInArr(arr){
 }
 console.log(maxNumInArr([10, 5, 20, 8]));
 console.log(maxNumInArr([-5, -10, -2]));
+
+// Print the Fibonacci Series up to N terms
+
+function fibonacciSeries(number){
+    let prev1 = 0;
+    let prev2 = 1;
+
+    console.log(prev1)
+    console.log(prev2)
+    for(let i=0; i<number; i++){
+       let fibonacci = prev1 + prev2;
+       console.log(fibonacci)
+       prev1 = prev2
+       prev2 = fibonacci
+
+    }
+
+}
+fibonacciSeries(5)
+
+//  Intermediate Level
+
+// 6. Find the First Non-Repeating Character
+
+function nonRepeatingCharacter(str){
+   let charCount = {}
+
+   for(let i =0; i< str.length; i++){
+    let char = str[i];
+    if(charCount[char]){
+        charCount[char]++;
+    }else{
+        charCount[char] = 1;
+    }
+   }
+
+   for(let i =0; i<str.length; i++){
+    if(charCount[str[i]] === 1){
+        return str[i];
+    }
+   }
+
+    return null; 
+}
+
+console.log(nonRepeatingCharacter("aabbcdd"));
+
+
+// 10. Pattern Printing
+
+function pattern(rows, columns){
+    for(let i= 1; i<= rows; i++){
+        for(let j=0; j< i ;j++){
+            process.stdout.write("*")
+        }
+        console.log("");
+
+    }
+}
+pattern(3, 3)
