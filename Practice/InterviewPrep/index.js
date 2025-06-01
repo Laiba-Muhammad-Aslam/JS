@@ -73,3 +73,21 @@ function palindrome(str){
 }
 console.log(palindrome("Laiba"));
 console.log(palindrome("Madam"));
+
+// Find the Maximum Number in an Array
+
+function maxNumInArr(arr){
+    let userArr = arr
+    let maxNumber = arr[0];
+
+    for(let i = 0; i<= arr.length -1 ; i++){
+
+        if(arr[i] >= maxNumber){
+            maxNumber = arr[i]
+            // console.log(maxNumber)
+        }
+    }
+    return maxNumber
+}
+console.log(maxNumInArr([10, 5, 20, 8]));
+console.log(maxNumInArr([-5, -10, -2]));
