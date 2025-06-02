@@ -156,6 +156,21 @@ function twoSum(arr, target){
 console.log(twoSum([2, 7, 11, 15], 9))
 console.log(twoSum([2, 7, 11, 15], 18))
 
+// 8. Sort an Array Without Using sort()
+
+function sortArray(arr){
+    for(let i =0; i< arr.length; i++){
+        for(let j =0; j< arr.length - i - 1; j++){
+            if(arr[j] > arr[j + 1]){
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+    return arr
+}
+console.log(sortArray([5, 3, 8, 4, 2]))
 
 // 10. Pattern Printing
 
