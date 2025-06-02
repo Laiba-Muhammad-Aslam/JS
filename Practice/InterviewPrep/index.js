@@ -172,6 +172,30 @@ function sortArray(arr){
 }
 console.log(sortArray([5, 3, 8, 4, 2]))
 
+// 9. Check if Two Strings Are Anagrams
+
+function checkAnagrams(str1, str2){
+    let lengthStr1 = str1.length;
+    let lengthStr2 = str2.length;
+    
+
+    if(lengthStr1 != lengthStr2){
+        return "Not an Anagram"
+    }else{
+       let checkStr1 = str1.toLowerCase().split("").sort().join("");
+       let checkStr2 = str2.toLowerCase().split("").sort().join("");
+       console.log(checkStr1, checkStr2)
+
+       if(checkStr1 === checkStr2){
+        return "It is an Anagram";
+       }else{
+        return "It is not an Anagram";
+       }
+    }
+}
+console.log(checkAnagrams("listen", "silent"));
+console.log(checkAnagrams("Laiba", "Ayesha"));
+
 // 10. Pattern Printing
 
 function pattern(rows, columns){
