@@ -18,3 +18,8 @@ function isPalindrome(arr) {
   return arr.join('') === arr.reverse().join('');
 }
 
+// 4. Remove Duplicates from Array
+
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
