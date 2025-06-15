@@ -31,3 +31,10 @@ function secondLargest(arr){
   unique.sort((a,b) => b - a);
   return unique[1];
 }
+
+// ✅ String Questions
+// 6. Reverse a String
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
