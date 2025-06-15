@@ -23,3 +23,11 @@ function isPalindrome(arr) {
 function removeDuplicates(arr) {
   return [...new Set(arr)];
 }
+
+// 5. Find the Second Largest Element
+
+function secondLargest(arr){
+  let unique = [...new Set(arr)];
+  unique.sort((a,b) => b - a);
+  return unique[1];
+}
