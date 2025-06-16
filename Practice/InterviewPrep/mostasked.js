@@ -32,9 +32,15 @@ function secondLargest(arr){
   return unique[1];
 }
 
-// ✅ String Questions
+// String Questions
 // 6. Reverse a String
 
 function reverseString(str) {
   return str.split('').reverse().join('');
+}
+
+// 7. Check if String is Palindrome
+
+function isPalindromeStr(str) {
+  return str === str.split('').reverse().join('');
 }
