@@ -44,3 +44,9 @@ function reverseString(str) {
 function isPalindromeStr(str) {
   return str === str.split('').reverse().join('');
 }
+
+// 8. Count Vowels in a String
+
+function countVowels(str) {
+  return (str.match(/[aeiou]/gi) || []).length;
+}
