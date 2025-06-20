@@ -56,3 +56,9 @@ function countVowels(str) {
 function isAnagram(str1, str2) {
   return str1.split('').sort().join('') === str2.split('').sort().join('');
 }
+
+// 10. Capitalize First Letter of Each Word
+
+function capitalizeWords(str) {
+  return str.replace(/\b\w/g, char => char.toUpperCase());
+}
