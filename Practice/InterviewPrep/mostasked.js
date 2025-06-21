@@ -62,3 +62,16 @@ function isAnagram(str1, str2) {
 function capitalizeWords(str) {
   return str.replace(/\b\w/g, char => char.toUpperCase());
 }
+
+// Number & Math Questions
+
+// 11. Check Prime Number
+
+function isPrime(number){
+  if(number <= 1) return false;
+   for (let i = 2; i <= Math.sqrt(number); i++)
+    if (number % i === 0) return false;
+  return true;
+}
+console.log(isPrime(7));
+console.log(isPrime(10));
