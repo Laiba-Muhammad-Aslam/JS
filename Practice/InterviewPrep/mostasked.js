@@ -73,5 +73,13 @@ function isPrime(number){
     if (number % i === 0) return false;
   return true;
 }
-console.log(isPrime(7));
-console.log(isPrime(10));
+// console.log(isPrime(7));
+// console.log(isPrime(10));
+
+// 12. Generate Fibonacci Series
+
+function fibonacci(n) {
+  const seq = [0, 1];
+  for (let i = 2; i < n; i++) seq.push(seq[i - 1] + seq[i - 2]);
+  return seq;
+}
