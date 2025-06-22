@@ -83,3 +83,11 @@ function fibonacci(n) {
   for (let i = 2; i < n; i++) seq.push(seq[i - 1] + seq[i - 2]);
   return seq;
 }
+
+// 13. Check Armstrong Number
+
+function isArmstrong(num) {
+  let digits = num.toString().split('');
+  let sum = digits.reduce((acc, d) => acc + Math.pow(+d, digits.length), 0);
+  return sum === num;
+}
