@@ -91,3 +91,10 @@ function isArmstrong(num) {
   let sum = digits.reduce((acc, d) => acc + Math.pow(+d, digits.length), 0);
   return sum === num;
 }
+
+// 14. Factorial of Number
+
+function factorial(n) {
+  return n === 0 ? 1 : n * factorial(n - 1);
+}
+
