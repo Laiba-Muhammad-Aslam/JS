@@ -98,3 +98,8 @@ function factorial(n) {
   return n === 0 ? 1 : n * factorial(n - 1);
 }
 
+// 15. Greatest Common Divisor (GCD)
+
+function gcd(a, b) {
+  return b === 0 ? a : gcd(b, a % b);
+}
