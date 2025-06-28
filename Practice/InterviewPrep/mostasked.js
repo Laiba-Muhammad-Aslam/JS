@@ -127,3 +127,9 @@ function bubbleSort(arr) {
       if (arr[j] > arr[j + 1]) [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
   return arr;
 }
+
+// 18. Merge Two Sorted Arrays
+
+function mergeSortedArrays(a, b) {
+  return [...a, ...b].sort((x, y) => x - y);
+}
