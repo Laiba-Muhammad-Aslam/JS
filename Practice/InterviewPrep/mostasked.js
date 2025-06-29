@@ -133,3 +133,12 @@ function bubbleSort(arr) {
 function mergeSortedArrays(a, b) {
   return [...a, ...b].sort((x, y) => x - y);
 }
+
+// 19. Find Missing Number in Sequence
+
+function findMissing(arr){
+  let n = arr.length + 1;
+  let total = (n * (n+1)/2);
+  let sum = arr.reduce((acc, val) => acc + val, 0);
+  return total - sum;
+}
