@@ -142,3 +142,11 @@ function findMissing(arr){
   let sum = arr.reduce((acc, val) => acc + val, 0);
   return total - sum;
 }
+
+// 20. Find First Non-Repeating Character
+
+function firstNonRepeatingChar(str) {
+  for (let char of str)
+    if (str.indexOf(char) === str.lastIndexOf(char)) return char;
+  return null;
+}

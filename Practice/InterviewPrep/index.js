@@ -208,3 +208,4 @@ function pattern(rows, columns){
     }
 }
 pattern(3, 3)
+
