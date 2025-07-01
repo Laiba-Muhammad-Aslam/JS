@@ -150,3 +150,14 @@ function firstNonRepeatingChar(str) {
     if (str.indexOf(char) === str.lastIndexOf(char)) return char;
   return null;
 }
+
+// Object & Map Questions
+
+// 21. Count Occurrences of Elements
+
+function countOccurrences(arr) {
+  return arr.reduce((acc, val) => {
+    acc[val] = (acc[val] || 0) + 1;
+    return acc;
+  }, {});
+}
