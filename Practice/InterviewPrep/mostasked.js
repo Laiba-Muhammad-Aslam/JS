@@ -161,3 +161,15 @@ function countOccurrences(arr) {
     return acc;
   }, {});
 }
+
+// 22. Group Anagrams
+
+function groupAnagrams(words) {
+  const map = {};
+  for (let word of words) {
+    let key = word.split('').sort().join('');
+    map[key] = map[key] || [];
+    map[key].push(word);
+  }
+  return Object.values(map);
+}
