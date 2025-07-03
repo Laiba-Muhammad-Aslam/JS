@@ -173,3 +173,15 @@ function groupAnagrams(words) {
   }
   return Object.values(map);
 }
+
+// 23. Flatten Nested Object
+
+function flattenObject(obj, prefix = '', res = {}) {
+  for (let key in obj) {
+    let newKey = prefix ? `${prefix}.${key}` : key;
+    typeof obj[key] === 'object' && !Array.isArray(obj[key])
+      ? flattenObject(obj[key], newKey, res)
+      : res[newKey] = obj[key];
+  }
+  return res;
+}
