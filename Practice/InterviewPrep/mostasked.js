@@ -185,3 +185,9 @@ function flattenObject(obj, prefix = '', res = {}) {
   }
   return res;
 }
+
+// 24. Deep Clone Object
+
+function deepClone(obj) {
+  return JSON.parse(JSON.stringify(obj));
+}
