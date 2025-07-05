@@ -191,3 +191,9 @@ function flattenObject(obj, prefix = '', res = {}) {
 function deepClone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
+
+// 25. Check if Two Objects are Equal
+
+function isEqual(obj1, obj2) {
+  return JSON.stringify(obj1) === JSON.stringify(obj2);
+}
