@@ -197,3 +197,19 @@ function deepClone(obj) {
 function isEqual(obj1, obj2) {
   return JSON.stringify(obj1) === JSON.stringify(obj2);
 }
+
+// Recursion Questions
+// 26. Sum of Array Elements
+
+function sumOfArrayElements(arr){
+  let sum = 0;
+  if(arr.length === 0){
+    return 0;
+  }else{
+    for(let i=0; i<arr.length; i++){
+      sum+=arr[i]
+    }
+    return sum;
+  }
+}
+console.log(sumOfArrayElements([10, 20, 5]));
