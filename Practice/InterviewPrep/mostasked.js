@@ -213,3 +213,15 @@ function sumOfArrayElements(arr){
   }
 }
 console.log(sumOfArrayElements([10, 20, 5]));
+
+// 27. String Permutations
+
+function getPermutations(str) {
+  if (str.length <= 1) return [str];
+  let perms = [];
+  for (let i = 0; i < str.length; i++) {
+    let rest = str.slice(0, i) + str.slice(i + 1);
+    for (let subPerm of getPermutations(rest)) perms.push(str[i] + subPerm);
+  }
+  return perms;
+}
