@@ -225,3 +225,9 @@ function getPermutations(str) {
   }
   return perms;
 }
+
+// 28. Power of a Number
+
+function power(base, exp) {
+  return exp === 0 ? 1 : base * power(base, exp - 1);
+}
