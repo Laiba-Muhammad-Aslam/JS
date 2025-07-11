@@ -231,3 +231,9 @@ function getPermutations(str) {
 function power(base, exp) {
   return exp === 0 ? 1 : base * power(base, exp - 1);
 }
+
+// 29. Fibonacci using Recursion
+
+function fib(n) {
+  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+}
