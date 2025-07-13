@@ -243,3 +243,28 @@ function fib(n) {
 function sumDigits(n) {
   return n === 0 ? 0 : (n % 10) + sumDigits(Math.floor(n / 10));
 }
+
+// Other Logical & Utility Questions
+
+// 31. Check Power of Two
+
+/*
+What does "Power of Two" mean?
+A number is a power of two if it can be written as: 2^0 = 1, 2^2 = 4, 2^3 = 8, 2^4= 16....
+So, examples of powers of two are:
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024,....
+*/
+
+function checkPowerOfTwo(num){
+  if( num<=0 ) return false;
+
+  while ( num%2 === 0){
+    num = num / 2;
+  }
+  return num === 1;
+}
+console.log(checkPowerOfTwo(1));
+console.log(checkPowerOfTwo(2));
+console.log(checkPowerOfTwo(3));
+console.log(checkPowerOfTwo(8));
+console.log(checkPowerOfTwo(10));
