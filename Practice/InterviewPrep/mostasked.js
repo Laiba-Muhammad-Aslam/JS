@@ -268,3 +268,20 @@ console.log(checkPowerOfTwo(2));
 console.log(checkPowerOfTwo(3));
 console.log(checkPowerOfTwo(8));
 console.log(checkPowerOfTwo(10));
+
+// 32. Rotate Array
+
+// function rotateArray(arr, k){
+//   let reverseArr = arr.reverse();
+//   let remaining = reverseArr.slice(3,).reverse()
+//   let newArr = reverseArr.slice(0,3).reverse()
+//   let finalArr = [...newArr, ...remaining]
+//   console.log(reverseArr, newArr, finalArr)
+// }
+
+// rotateArray([1, 2, 3, 4, 5, 6, 7], 3)
+
+function rotateArray(arr, k) {
+  k = k % arr.length;
+  return arr.slice(-k).concat(arr.slice(0, -k));
+}
